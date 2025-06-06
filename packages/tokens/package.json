@@ -3,8 +3,9 @@
   "version": "0.0.1-beta.0",
   "license": "ISC",
   "description": "BCBST Design Tokens",
+  "type": "module",
   "devDependencies": {
-    "style-dictionary": "^5.0.0"
+    "style-dictionary": "^3.9.2"
   },
   "repository": {
     "type": "git",

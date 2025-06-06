@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $sizes: (
   xxs: $size-breakpoint-xxs,
   xs: $size-breakpoint-xs,
@@ -12,8 +14,8 @@ $sizes: (
 );
 
 @mixin respond-above($size) {
-  @if map-has-key($sizes, $size) {
-    $size-value: map-get($sizes, $size);
+  @if map.has-key($sizes, $size) {
+    $size-value: map.get($sizes, $size);
 
     @media (min-width: $size-value) {
       @content;
@@ -24,8 +26,8 @@ $sizes: (
 }
 
 @mixin respond-below($size) {
-  @if map-has-key($sizes, $size) {
-    $size-value: map-get($sizes, $size);
+  @if map.has-key($sizes, $size) {
+    $size-value: map.get($sizes, $size);
 
     @media (max-width: ($size-value - 1)) {
       @content;
@@ -36,27 +38,27 @@ $sizes: (
 }
 
 @mixin respond-between($lower, $upper) {
-  @if map-has-key($sizes, $lower) and map-has-key($sizes, $upper) {
-    $lower-size: map-get($sizes, $lower);
-    $upper-size: map-get($sizes, $upper);
+  @if map.has-key($sizes, $lower) and map.has-key($sizes, $upper) {
+    $lower-size: map.get($sizes, $lower);
+    $upper-size: map.get($sizes, $upper);
 
     @media (min-width: $lower-size) and (max-width: ($upper-size - 1)) {
       @content;
     }
   } @else {
-    @if (map-has-key($sizes, $lower) == false) {
+    @if (map.has-key($sizes, $lower) == false) {
       @warn 'Your lower breakpoint was invalid: #{$lower}.';
     }
 
-    @if (map-has-key($sizes, $upper) == false) {
+    @if (map.has-key($sizes, $upper) == false) {
       @warn 'Your upper breakpoint was invalid: #{$upper}.';
     }
   }
 }
 
 @mixin container-above($size, $name: "") {
-  @if map-has-key($sizes, $size) {
-    $size-value: map-get($sizes, $size);
+  @if map.has-key($sizes, $size) {
+    $size-value: map.get($sizes, $size);
 
     @container #{$name} (width >= #{$size-value}) { 
       @content;
@@ -67,8 +69,8 @@ $sizes: (
 }
 
 @mixin container-below($size, $name: "") {
-  @if map-has-key($sizes, $size) {
-    $size-value: map-get($sizes, $size);
+  @if map.has-key($sizes, $size) {
+    $size-value: map.get($sizes, $size);
 
     @container #{$name} (width < #{$size-value}) { 
       @content;

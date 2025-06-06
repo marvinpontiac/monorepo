@@ -1,6 +1,4 @@
-const StyleDictionary = require('style-dictionary');
-const StyleDictionaryPackage = require('style-dictionary');
-
+import StyleDictionaryPackage from 'style-dictionary';
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
 const PLATFORMS = ['web', 'frontend'];
@@ -96,31 +94,6 @@ function getStyleDictionaryConfig(brand, platform) {
           {
             destination: 'tokens.json',
             format: 'json/flat',
-          },
-        ],
-      },
-      ios: {
-        transformGroup: 'ios',
-        buildPath: `build/ios/${brand}/`,
-        format: 'ios/colors.h',
-        className: 'StyleDictionaryColor',
-        type: 'StyleDictionaryColorName',
-        filter: {
-          attributes: {
-            category: 'color',
-          },
-        },
-        files: [
-          {
-            destination: 'tokens-all.plist',
-            template: 'ios/plist',
-          },
-          {
-            destination: 'tokens-colors.plist',
-            template: 'ios/plist',
-            filter: {
-              type: 'color',
-            },
           },
         ],
       },
