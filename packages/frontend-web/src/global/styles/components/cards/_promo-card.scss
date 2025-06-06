@@ -1,0 +1,19 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-card--promo {
+  @include box-shadow;
+  .bcbst-card__description {
+    font-weight: var(--font-weight-semibold);
+    padding-block-start: calc(var(--size-spacing-base) * 2.5);
+  }
+
+  .bcbst-card__cta {
+    height: rem-calc(65);
+    padding: 0 calc(var(--size-spacing-base) * 2.5);
+  }
+}

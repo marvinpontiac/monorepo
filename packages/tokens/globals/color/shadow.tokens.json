@@ -1,0 +1,10 @@
+{
+    "color": {
+        "shadow": {
+            "value": "{color.gray.light24}"
+        },
+        "shadowDark": {
+            "value": "{color.gray.dark24}"
+        }
+    }
+}

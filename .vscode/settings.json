@@ -1,0 +1,11 @@
+{
+  // START: vscode-stylelint plugin settings
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"],
+  "stylelint.customSyntax": "postcss-scss",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  }
+  // END: vscode-stylelint plugin settings
+}

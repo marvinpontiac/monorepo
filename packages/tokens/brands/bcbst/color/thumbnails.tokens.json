@@ -1,0 +1,11 @@
+{
+    "color": {
+        "carousel": {
+            "thumbnail": {
+                "active": {
+                    "value": "{color.interactive.primary.default.value}"
+                }
+            }
+        }
+    }
+}

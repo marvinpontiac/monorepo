@@ -1,0 +1,32 @@
+{
+    "size": {
+        "spacing": {
+            "tab": {
+                "padding-y": {
+                    "value": "15px",
+                    "comment": "15px"
+                },
+                "margin-x": {
+                    "value": "48px",
+                    "comment": "48px"
+                },
+                "tab-border": {
+                    "value": "4px",
+                    "comment": "4px"
+                },
+                "tabpanel-border": {
+                    "value": "1px",
+                    "comment": "1px"
+                },
+                "header-margin": {
+                    "value": "25px",
+                    "comment": "25px"
+                },
+                "container-padding": {
+                    "value": "40px",
+                    "comment": "40px"
+                }
+            }
+        }
+    }
+}

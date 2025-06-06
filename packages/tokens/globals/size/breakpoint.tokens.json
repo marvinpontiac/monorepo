@@ -1,0 +1,51 @@
+{
+    "size": {
+        "breakpoint": {
+            "xxs": {
+               "value": "320px",
+               "category": "size",
+               "comment": "320px"
+            },
+            "xs": {
+               "value": "480px",
+               "category": "size",
+               "comment": "480px"
+            },
+            "sm": {
+               "value": "768px",
+               "category": "size",
+               "comment": "768px"
+            },
+            "md": {
+               "value": "992px",
+               "category": "size",
+               "comment": "992px"
+            },
+            "lg": {
+               "value": "1280px",
+               "category": "size",
+               "comment": "1280px"
+            },
+            "xl": {
+               "value": "1440px",
+               "category": "size",
+               "comment": "1440px"
+            },
+            "xxl": {
+               "value": "1800px",
+               "category": "size",
+               "comment": "1800px"
+            }
+         },
+        "device": {
+            "tablet": {
+                "value": "{size.breakpoint.sm}",
+                "comment": "768px"
+            },
+            "desktop": {
+                "value": "{size.breakpoint.lg}",
+                "comment": "1280px"
+            }
+        }
+    }
+}

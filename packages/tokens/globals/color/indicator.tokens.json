@@ -1,0 +1,9 @@
+{
+    "color": {
+        "indicator": {
+            "dot": {
+                "value": "{color.interactive.coolGrayBlue.default}"
+            }
+        }
+    }
+}

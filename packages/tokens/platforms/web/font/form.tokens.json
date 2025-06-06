@@ -1,0 +1,15 @@
+{
+    "font": {
+        "form": {
+            "label": {
+                "value": "{font.weight.bold} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "error": {
+                "value": "italic {font.weight.regular} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "selectionLabel": {
+                "value": "{font.weight.regular} {size.font.medium.1}/{size.font.lineHeight.2} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            }
+        }
+    }
+}

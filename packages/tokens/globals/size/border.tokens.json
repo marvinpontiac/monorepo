@@ -1,0 +1,18 @@
+{
+    "size": {
+        "border": {
+            "small": {
+                "value": "1px",
+                "comment": "1px"
+            },
+            "checkbox": {
+                "value": "2px",
+                "comment": "2px"
+            },
+            "radio": {
+                "value": "2px",
+                "comment": "2px"
+            }
+        }
+    }
+}

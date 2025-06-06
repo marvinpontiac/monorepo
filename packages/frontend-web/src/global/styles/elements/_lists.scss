@@ -1,0 +1,10 @@
+ul, ol {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: var(--size-list-margin-y);
+    margin-left: var(--size-list-margin-x);
+
+    li {
+        margin-top: var(--size-list-item-margin-y);
+    }
+}

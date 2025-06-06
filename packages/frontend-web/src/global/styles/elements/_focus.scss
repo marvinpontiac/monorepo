@@ -1,0 +1,6 @@
+:focus-visible {
+  border-color: transparent;
+  border-radius: rem-calc(3);
+  outline: var(--size-border-small) solid var(--color-border-focus-light);
+  outline-offset: rem-calc(4);
+}

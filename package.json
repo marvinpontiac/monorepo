@@ -1,0 +1,12 @@
+{
+  "name": "@bsbst",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "./packages/tokens",
+    "./packages/assets",
+    "./packages/frontend-web"
+  ]
+}

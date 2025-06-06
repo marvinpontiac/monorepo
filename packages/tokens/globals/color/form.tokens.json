@@ -1,0 +1,16 @@
+{
+    "color": {
+        "form": {
+            "checkmark": {
+                "selected": {
+                    "value": "{color.interactive.primary.default}"
+                }
+            },
+            "radio": {
+                "selected": {
+                    "value": "{color.interactive.primary.default}"
+                }
+            }
+        }
+    }
+}

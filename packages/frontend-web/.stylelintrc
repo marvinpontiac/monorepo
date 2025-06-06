@@ -1,0 +1,13 @@
+{
+  "extends": "stylelint-config-idiomatic-order",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ]
+  }
+}

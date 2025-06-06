@@ -1,0 +1,95 @@
+{
+  "lightText": {
+    "content": {
+      "heading": "Lorem Ipsum™",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis turpis eu ligula placerat fringilla.",
+      "image": [
+      ]
+    },
+    "buttons": {
+      "buttonGroup": [
+        {
+          "label": "Cupidatat mollit consequat aliqua amet",
+          "icon": "bcbst-btn--caret"
+        },
+        {
+          "label": "Lorem ipsum",
+          "variant": "bcbst-btn--secondary",
+          "icon": "bcbst-btn--caret"
+        }
+      ]
+    },
+    "jumpLinks": {
+      "links": [
+        {
+          "label": "anchor link",
+          "variant": "bcbst-btn--text-reversed",
+          "icon": null
+        },
+        {
+          "label": "anchor link",
+          "variant": "bcbst-btn--text-reversed",
+          "icon": null
+        },
+        {
+          "label": "anchor link",
+          "variant": "bcbst-btn--text-reversed",
+          "icon": null
+        },
+        {
+          "label": "anchor link",
+          "variant": "bcbst-btn--text-reversed",
+          "icon": null
+        }
+      ]
+    }
+  },
+  "darkText": {
+    "content": {
+      "heading": "Lorem Ipsum™",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis turpis eu ligula placerat fringilla.",
+      "image": [
+        "https://fastly.picsum.photos/id/53/1400/500.jpg?hmac=f30oJNZ8qS8UGa4SqwqvgiLZ3Rfe7a2Y8EraQCC5Uew",
+        "https://fastly.picsum.photos/id/971/800/600.jpg?hmac=VNoVYSBS5VK3l60VcidesTXedopLIEbBjLodIAXyv14",
+        "https://fastly.picsum.photos/id/581/500/700.jpg?hmac=Vhq-0zzTGI7wdIWoO4LpgUS_enU_9s1cO9BH6dM7UwI"
+      ]
+    },
+    "buttons": {
+      "buttonGroup": [
+        {
+          "label": "Cupidatat mollit consequat aliqua amet",
+          "icon": "bcbst-btn--caret"
+        },
+        {
+          "label": "Lorem ipsum",
+          "variant": "bcbst-btn--secondary",
+          "icon": "bcbst-btn--caret"
+        }
+      ]
+    },
+    "jumpLinks": {
+      "links": [
+        {
+          "label": "anchor link",
+          "variant": "bcbst-btn--text-secondary",
+          "icon": null
+        },
+        {
+          "label": "anchor link",
+          "variant": "bcbst-btn--text-secondary",
+          "icon": null
+        },
+        {
+          "label": "anchor link",
+          "variant": "bcbst-btn--text-secondary",
+          "icon": null
+        },
+        {
+          "label": "anchor link four",
+          "variant": "bcbst-btn--text-secondary",
+          "icon": null
+        }
+      ]
+    }
+  }
+}

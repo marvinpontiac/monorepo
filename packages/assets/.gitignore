@@ -1,0 +1,5 @@
+// generated files on build
+icons/svg/compiled/*.css
+icons/svg/compiled/*.svg
+icons/svg/compiled/*.json
+icons/svg/optimized

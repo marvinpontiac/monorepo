@@ -1,0 +1,41 @@
+%button-hyperlinks {
+
+  // TODO: might need to merge these with the typography story
+  --_color: var(--color-font-link-inline-default);
+  --_colorHover: var(--color-font-link-inline-hover);
+  --_decoration: underline;
+  --_decorationHover: none;
+  --_size: var(--size-font-link-default);
+  --_weight: var(--font-weight-regular);
+  --_lineHeight: 1.333333;
+  --_letterSpacing: normal;
+  --_fontFamily: var(--font-family-sans);
+  --_transform: inherit;
+
+  color: var(--_color);
+  font-family: var(--_fontFamily);
+  font-size: var(--_size);
+  font-weight: var(--_weight);
+  letter-spacing: var(--_letterSpacing);
+  line-height: var(--_lineHeight);
+  text-decoration: var(--_decoration);
+  text-transform: var(--_transform);
+
+  &[disabled],
+  &[aria-disabled='true'] {
+    cursor: not-allowed;
+  }
+
+  &:visited {
+    color: var(--_color);
+  }
+
+  &:not([disabled], [aria-disabled='true']):focus-visible {
+    color: var(--_color);
+  }
+
+  &:hover {
+    color: var(--_colorHover);
+    text-decoration: var(--_decorationHover);
+  }
+}

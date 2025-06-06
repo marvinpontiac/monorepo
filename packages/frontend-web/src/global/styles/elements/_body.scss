@@ -1,0 +1,200 @@
+body {
+  font-family: var(--local-font-family-body, var(--local-font-family, var(--font-family-body)));
+
+  html[lang="zh-cn"] & {
+    font-family: var(--local-font-family-body, var(--local-font-family, var(--font-cn-family-body)));
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+* {
+  text-decoration-thickness: 0.0625rem !important;
+  text-underline-offset: 0.1875em;
+}
+
+%paragraph {
+  font: var(--font-body-paragraph);
+}
+
+%paragraph-cn {
+  font: var(--font-cn-body-paragraph);
+}
+
+%article {
+  font: var(--font-body-article);
+}
+
+%article-cn {
+  font: var(--font-cn-body-article);
+}
+
+%p1 {
+  font: var(--font-body-p1);
+}
+
+%p1-cn {
+  font: var(--font-cn-body-p1);
+}
+
+%p2 {
+  font: var(--font-body-p2);
+}
+
+%p2-cn {
+  font: var(--font-cn-body-p2);
+}
+
+%p3 {
+  font: var(--font-body-p3);
+}
+
+%p3-cn {
+  font: var(--font-cn-body-p3);
+}
+
+%p4 {
+  font: var(--font-body-p4);
+}
+
+%p4-cn {
+  font: var(--font-cn-body-p4);
+}
+
+%p5 {
+  font: var(--font-body-p5);
+}
+
+%p5-cn {
+  font: var(--font-cn-body-p5);
+}
+
+%p6 {
+  font: var(--font-body-p6);
+}
+
+%p6-cn {
+  font: var(--font-cn-body-p6);
+}
+
+%label {
+  font: var(--font-body-label);
+  text-transform: uppercase;
+}
+
+%label-cn {
+  font: var(--font-cn-body-label);
+  text-transform: uppercase;
+}
+
+%eyebrow {
+  color: var(--_font-eyebrow-color, var(--color-interactive-secondary-default));
+  font: var(--font-body-eyebrow);
+  text-transform: uppercase;
+}
+
+%eyebrow-cn {
+  color: var(--_font-eyebrow-color, var(--color-interactive-secondary-default));
+  font: var(--font-cn-body-eyebrow);
+  text-transform: uppercase;
+}
+
+.paragraph {
+  @extend %paragraph;
+}
+
+article,
+.article {
+  @extend %article;
+}
+
+p {
+  @extend %paragraph;
+}
+
+.p1 {
+  @extend %p1;
+}
+
+.p2 {
+  @extend %p2;
+}
+
+.p3 {
+  @extend %p3;
+}
+
+.p4 {
+  @extend %p4;
+}
+
+.p5 {
+  @extend %p5;
+}
+
+.p6 {
+  @extend %p6;
+}
+
+label,
+.label {
+  @extend %label;
+}
+
+.eyebrow {
+  @extend %eyebrow;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html[lang="zh-cn"] {
+  .paragraph {
+    @extend %paragraph-cn;
+  }
+  
+  article,
+  .article {
+    @extend %article-cn;
+  }
+  
+  p {
+    @extend %paragraph-cn;
+  }
+  
+  .p1 {
+    @extend %p1-cn;
+  }
+  
+  .p2 {
+    @extend %p2-cn;
+  }
+  
+  .p3 {
+    @extend %p3-cn;
+  }
+  
+  .p4 {
+    @extend %p4-cn;
+  }
+  
+  .p5 {
+    @extend %p5-cn;
+  }
+  
+  .p6 {
+    @extend %p6-cn;
+  }
+  
+  label,
+  .label {
+    @extend %label-cn;
+  }
+  
+  .eyebrow {
+    @extend %eyebrow-cn;
+  }
+}

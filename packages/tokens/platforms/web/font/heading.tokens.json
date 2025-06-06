@@ -1,0 +1,47 @@
+{
+    "font": {
+        "heading": {
+            "display": {
+                "value": "{font.weight.heading} {size.font.large.3}/{size.font.lineHeight.8} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h1": {
+                "value": "{font.weight.heading} {size.font.large.2}/{size.font.lineHeight.7} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h2": {
+                "value": "{font.weight.heading} {size.font.large.1}/{size.font.lineHeight.6} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h3": {
+                "value": "{font.weight.heading} {size.font.medium.6}/{size.font.lineHeight.4} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h4": {
+                "value": "{font.weight.heading} {size.font.medium.4}/{size.font.lineHeight.3} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h5": {
+                "value": "{font.weight.heading} {size.font.medium.2}/{size.font.lineHeight.2} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h6": {
+                "value": "{font.weight.heading} {size.font.small.3}/{size.font.lineHeight.2} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            }
+        },
+        "mobileHeading": {
+            "h1": {
+                "value": "{font.weight.heading} {size.font.large.1}/{size.font.lineHeight.6} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h2": {
+                "value": "{font.weight.heading} {size.font.medium.4}/{size.font.lineHeight.3} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h3": {
+                "value": "{font.weight.heading} {size.font.medium.2}/{size.font.lineHeight.4} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h4": {
+                "value": "{font.weight.heading} {size.font.medium.1}/{size.font.lineHeight.3} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h5": {
+                "value": "{font.weight.regular} {size.font.medium.1}/{size.font.lineHeight.2} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            },
+            "h6": {
+                "value": "{font.weight.heading} {size.font.small.3}/{size.font.lineHeight.2} var(--local-font-family-heading, var(--local-font-family, {font.family.heading}))"
+            }
+        }
+    }
+}

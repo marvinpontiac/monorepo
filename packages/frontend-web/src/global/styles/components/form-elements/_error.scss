@@ -1,0 +1,19 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-form-error {
+  margin-top: rem-calc(5);
+  * {
+    margin-top: 0;
+    color: var(--color-font-error);
+    font: var(--font-form-error);
+
+    html[lang="zh-cn"] & {
+      font: var(--font-cn-form-error);
+    }
+  }
+}

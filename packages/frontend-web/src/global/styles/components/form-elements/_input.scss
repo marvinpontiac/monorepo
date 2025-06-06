@@ -1,0 +1,26 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-form-input {
+    @extend %form-input;
+}
+
+.bcbst-form-field {
+    .react-international-phone-input-container {
+        .react-international-phone-country-selector-button {
+            margin-right: 0px;
+            height: 100%;
+        }
+        .react-international-phone-country-selector-dropdown {
+            z-index: 2;
+        }
+        .react-international-phone-input {
+            @extend %form-input;
+            z-index: 1;
+        }
+    }
+}

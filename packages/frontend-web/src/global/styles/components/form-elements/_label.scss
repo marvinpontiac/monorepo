@@ -1,0 +1,26 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-field {
+  &__label {
+    display: block;
+    margin-bottom: var(--size-spacing-base); // need to confirm
+    color: var(--color-font-form-label);
+    font: var(--font-form-label);
+
+    html[lang="zh-cn"] & {
+      font: var(--font-cn-form-label);
+    }
+  }
+  &__optional {
+    font-weight: var(--font-weight-light);
+    text-transform: none;
+  }
+  &__required {
+    color: var(--color-font-error);
+  }
+}

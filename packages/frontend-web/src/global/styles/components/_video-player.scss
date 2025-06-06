@@ -1,0 +1,132 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-video-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  container: video-player / inline-size;
+
+  &__thumbnail {
+    position: absolute;
+    z-index: 99;
+    background-position: center;
+    background-size: cover;
+    inset: 0;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      content: '';
+      /* Change the color and opacity as needed */
+    }
+
+    svg {
+      position: relative;
+      top: calc(50% - var(--size-videoplayer-playbutton) / 2);
+      left: calc(50% - var(--size-videoplayer-playbutton) / 2);
+      width: var(--size-videoplayer-playbutton);
+      height: var(--size-videoplayer-playbutton);
+      color: var(--color-font-reversed);
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      svg {
+        transform: scale(1.15);
+      }
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: var(--size-videoplayer-caption-desktop);
+    color: var(--color-font-reversed);
+
+    p {
+      padding: 0;
+      margin: 0;
+      font: var(--font-body-paragraph);
+      font-weight: var(--font-weight-regular);
+
+      html[lang="zh-cn"] & {
+        font: var(--font-cn-body-paragraph);
+        font-weight: var(--font-weight-regular);
+      }
+    }
+
+    h3 {
+      padding: 0;
+      margin: 0 0 var(--size-grid-padding-small) 0;
+      font-weight: var(--font-weight-medium);
+    }
+  }
+
+  &--light-gray {
+    background-color: var(--color-gray-light32);
+  }
+  
+  &--grid-wrap {
+    padding-block: var(--size-spacing-block-padding-background);
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+
+  .youkuplayer iframe,
+  .youtube-player iframe {
+    aspect-ratio: 16 / 9;
+  }
+
+  @include container-below(tablet, video-player) {
+    &__caption {
+      padding: var(--size-videoplayer-caption-tablet);
+
+      h3 {
+        font: var(--font-heading-h5);
+        font-size: var(--size-font-medium-1);
+
+        html[lang="zh-cn"] & {
+          font: var(--font-cn-heading-h5);
+          font-size: var(--size-font-medium-1);
+        }
+      }
+
+      p {
+        font: var(--font-body-p5);
+
+        html[lang="zh-cn"] & {
+          font: var(--font-cn-body-p5);
+        }
+      }
+    }
+  }
+
+  @include container-below(xs, video-player) {
+    &__caption {
+      padding: var(--size-videoplayer-caption-mobile);
+
+      p {
+        display: none;
+      }
+    }
+  }
+}

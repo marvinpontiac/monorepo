@@ -1,0 +1,13 @@
+@mixin box-shadow {
+    box-shadow: var(--size-shadow-offset-x) var(--size-shadow-offset-y) var(--size-shadow-blur-radius)
+    var(--size-shadow-spread-radius) var(--color-shadow);
+}
+
+@mixin box-shadow-dark {
+    box-shadow: var(--size-shadow-offset-x) var(--size-shadow-offset-y) var(--size-shadow-blur-radius)
+    var(--size-shadow-spread-radius) var(--color-shadow-dark);
+}
+
+@mixin social-button-shadow {
+    box-shadow: var(--size-shadow-offset-x) var(--size-shadow-social-button-offset-y) var(--size-shadow-social-button-blur-radius) var(--size-shadow-social-button-spread-radius) rgba(0, 0, 0, 0.15);
+}

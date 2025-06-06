@@ -1,0 +1,25 @@
+{
+    "color": {
+        "border": {
+            "focus": {
+                "dark": {
+                    "value": "{color.interactive.secondary.default.value}"
+                },
+                "light": {
+                    "value": "{color.brand.coolLilac.value}"
+                }
+            },
+            "button": {
+                "secondary": {
+                    "value": "{color.gray.dark56.value}"
+                },
+                "reversed": {
+                    "value": "{color.gray.light40.value}"
+                }
+            },
+            "light": {
+                "value": "{color.gray.light8.value}"
+            }
+        }
+    }
+}

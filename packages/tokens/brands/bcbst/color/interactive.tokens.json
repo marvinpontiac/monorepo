@@ -1,0 +1,46 @@
+{
+    "color": {
+        "interactive": {
+            "primary": {
+                "default": {
+                    "value": "#3155A4"
+                },
+                "hover": {
+                    "value": "#274483"
+                }
+            },
+            "secondary": {
+                "default": {
+                    "value": "#000E57"
+                },
+                "hover": {
+                    "value": "#000E57"
+                }
+            },
+            "tertiary": {
+                "default": {
+                    "value": "#0C30CC"
+                },
+                "hover": {
+                    "value": "#092499"
+                }
+            },
+            "coolGray": {
+                "default": {
+                    "value": "#C4CED1"
+                },
+                "hover": {
+                    "value": "#ADBBBF"
+                }
+            },
+            "coolGrayBlue": {
+                "default": {
+                    "value": "#7C9BA9"
+                },
+                "hover": {
+                    "value": "#4C6774"
+                }
+            }
+        }
+    }
+}

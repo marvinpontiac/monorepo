@@ -1,0 +1,46 @@
+{
+    "color": {
+        "background": {
+            "button": {
+                "primary": {
+                    "default": {
+                        "value": "{color.interactive.primary.default.value}"
+                    },
+                    "hover": {
+                        "value": "{color.interactive.primary.hover.value}"
+                    }
+                },
+                "secondary": {
+                    "default": {
+                        "value": "{color.gray.light40.value}"
+                    },
+                    "hover": {
+                        "value": "{color.interactive.coolGray.default.value}"
+                    }
+                },
+                "tertiary": {
+                    "default": {
+                        "value": "{color.interactive.coolGray.default.value}"
+                    },
+                    "hover": {
+                        "value": "{color.interactive.coolGray.hover.value}"
+                    }
+                },
+                "reversed": {
+                    "default": {
+                        "value": "transparent"
+                    },
+                    "hover": {
+                        "value": "transparent"
+                    }
+                }
+            },
+            "input": {
+                "value": "{color.gray.light32.value}"
+            },
+            "promo-alt": {
+                "value": "{color.brand.navy}"
+            }
+        }
+    }
+}

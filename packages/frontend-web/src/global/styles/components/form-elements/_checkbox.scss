@@ -1,0 +1,73 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-form-checkbox {
+  position: absolute;
+  left: -99999px;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+
+  &:focus {
+    outline: transparent;
+  }
+
+  &__label {
+    position: relative;
+    color: var(--color-font-form-label);
+    font: var(--font-form-selection-label);
+    text-transform: none;
+    cursor: pointer;
+
+    html[lang="zh-cn"] & {
+      font: var(--font-cn-form-selection-label);
+    }
+  }
+
+  & + &__label::before {
+    display: inline-block;
+    width: rem-calc(18);
+    height: rem-calc(18);
+    box-sizing: border-box;
+    border: var(--size-border-radio) solid var(--color-gray-light16);
+    margin: 0 rem-calc(6) rem-calc(-3) 0;
+    content: '';
+  }
+
+  & + &__label::after {
+    --_backgroundColor: none;
+    position: absolute;
+    top: 0.28rem;
+    left: 0.25rem;
+    display: block;
+    width: rem-calc(11);
+    height: rem-calc(11);
+    background: var(--_backgroundColor);
+    clip-path: $clip-path-confirm;
+    content: '';
+  }
+  
+  &:checked + &__label::after {
+    --_backgroundColor: var(--color-form-checkmark-selected);
+  }
+
+  &:focus-visible + &__label::before {
+    outline: var(--size-border-small) solid var(--color-border-focus-dark);
+  }
+
+  &__label {
+    &:hover {
+      &::after {
+        top: 0.28rem;
+        left: 0.21rem;
+        background-color: var(--color-gray-light16);
+        content: '';
+        clip-path: none;
+      }
+    }
+  }
+}

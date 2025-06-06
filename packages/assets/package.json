@@ -1,0 +1,31 @@
+{
+  "name": "@bcbst/assets",
+  "version": "0.0.1-beta.0",
+  "license": "ISC",
+  "private": false,
+  "description": "BCBST icons and fonts",
+  "devDependencies": {
+    "npm": "^10.4.0",
+    "replace-in-files-cli": "^2.2.0",
+    "style-dictionary": "^5.0.0",
+    "svg-join": "^1.2.1",
+    "svgo": "^3.2.0",
+    "dir-to-json": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marvinpontiac/monorepo"
+  },
+  "files": [
+    "icons",
+    "build"
+  ],
+  "scripts": {
+    "svg:optimize": "svgo --folder ./icons/svg/originals -o ./icons/svg/optimized",
+    "svg:join": "svg-join -s ./icons/svg/optimized/*.svg -o ./icons/svg/compiled -n bcbst-icons -p bcbst-",
+    "svg:toCurrentColor": "replace-in-files --string='#323232' --replacement='currentColor' ./icons/svg/optimized/*.svg",
+    "svg:dirToJson": "node ./build.js",
+    "build": "npm run svg:optimize && npm run svg:toCurrentColor && npm run svg:join && npm run svg:dirToJson",
+    "preview-ddl": "npm link"
+  }
+}

@@ -1,0 +1,36 @@
+.bcbst-content-area,
+.bcbst-button-area-vertical,
+.bcbst-button-area-horizontal {
+    display: flex;
+}
+
+.bcbst-content-area {
+    flex-direction: column;
+
+    :first-child {
+        margin-top: 0;
+    }
+}
+
+.bcbst-button-area-vertical,
+.bcbst-button-area-horizontal {
+    .bcbst-button {
+        flex-grow: auto;
+    }
+}
+
+.bcbst-button-area-horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    container: button-area / inline-size;
+    gap: var(--size-grid-padding-small);
+
+    &--align-left {
+        justify-content: left;
+
+        @include container-below(tablet) {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "size": {
+        "videoplayer": {
+            "caption": {
+                "desktop": {
+                    "value": "30px",
+                    "comment": "30px"
+                },
+                "tablet": {
+                    "value": "20px",
+                    "comment": "20px"
+                },
+                "mobile": {
+                    "value": "10px",
+                    "comment": "10px"
+                }
+            },
+            "video-height": {
+                "desktop": {
+                    "value": "664px",
+                    "comment": "664px"
+                },
+                "tablet": {
+                    "value": "432px",
+                    "comment": "432px"
+                },
+                "mobile": {
+                    "value": "211px",
+                    "comment": "211px"
+                }
+            },
+            "video-width": {
+                "desktop": {
+                    "value": "1180px",
+                    "comment": "1180px"
+                },
+                "tablet": {
+                    "value": "768px",
+                    "comment": "768px"
+                },
+                "mobile": {
+                    "value": "375px",
+                    "comment": "375px"
+                }
+            },
+            "playbutton": {
+                "value": "88px",
+                "comment": "88px"
+            }
+        }
+    }
+}

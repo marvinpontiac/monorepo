@@ -1,0 +1,11 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-form-textarea {
+    @extend %form-input;
+    padding: var(--size-form-textarea-padding-x) var(--size-form-textarea-padding-y);
+}

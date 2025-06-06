@@ -1,0 +1,42 @@
+{
+    "size": {
+        "blockquote": {
+            "padding-x": {
+                "value": "20px",
+                "comment": "20px"
+            },
+            "padding-y": {
+                "value": "16px",
+                "comment": "16px"
+            },
+            "margin-x": {
+                "value": "80px",
+                "comment": "80px"
+            },
+            "margin-y": {
+                "value": "40px",
+                "comment": "40px"
+            },
+            "border-size": {
+                "value": "4px",
+                "comment": "4px"
+            }
+        },
+        "list": {
+            "margin-x": {
+                "value": "32px",
+                "comment": "32px"
+            },
+            "margin-y": {
+                "value": "16px",
+                "comment": "16px"
+            },
+            "item": {
+                "margin-y": {
+                    "value": "8px",
+                    "comment": "8px"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "font": {
+    "style": {
+      "italic": {
+        "value": "italic"
+      }
+    },
+    "underline": {
+      "value": "underline"
+    },
+    "variantPosition": {
+      "sub": {
+        "value": "sub"
+      },
+      "super": {
+        "value": "super"
+      }
+    }
+  }
+}

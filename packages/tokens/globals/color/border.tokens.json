@@ -1,0 +1,14 @@
+{
+    "color": {
+        "border": {
+            "table": {
+                "header": {
+                    "value": "{color.gray.dark64}"
+                },
+                "cell": {
+                    "value": "{color.gray.light16}"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "font": {
+        "body": {
+            "paragraph": {
+                "value": "{font.weight.body} {size.font.medium.1}/{size.font.lineHeight.2} var(--local-font-family-body, var(--local-font-family, var(--font-family-body)))"
+            },
+            "article": {
+                "value": "{font.weight.body} {size.font.medium.2}/{size.font.lineHeight.3} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "p1": {
+                "value": "{font.weight.body} {size.font.medium.5}/{size.font.lineHeight.4} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "p2": {
+                "value": "{font.weight.body} {size.font.medium.3}/{size.font.lineHeight.3} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "p3": {
+                "value": "{font.weight.body} {size.font.medium.2}/{size.font.lineHeight.2} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "p4": {
+                "value": "{font.weight.body} {size.font.small.3}/{size.font.lineHeight.2} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "p5": {
+                "value": "{font.weight.body} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "p6": {
+                "value": "{font.weight.body} {size.font.small.1}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "label": {
+                "value": "{font.weight.semibold} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "eyebrow": {
+                "value": "{font.weight.semibold} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "rteBlockQuote": {
+                "value": "{font.weight.light} {size.font.medium.3}/{size.font.lineHeight.3} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            },
+            "tab": {
+                "value": "{font.weight.bold} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
+            }
+        }
+    }
+}

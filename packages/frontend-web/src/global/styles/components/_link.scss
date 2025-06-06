@@ -1,0 +1,50 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-link {
+    @extend %button-hyperlinks;
+
+    &--nav-menu {
+        --_color: var(--color-font-link-nav-menu-default);
+        --_colorHover: var(--color-font-link-nav-menu-hover);
+        --_decoration: none;
+        --_decorationHover: underline;
+        --_size: var(--size-font-link-nav-menu);
+    }
+    &--nav-utility {
+        --_color: var(--color-font-link-nav-utility-default);
+        --_colorHover: var(--color-font-link-nav-utility-hover);
+        --_decoration: none;
+        --_decorationHover: underline;
+        --_size: var(--size-font-link-nav-utility);
+        --_lineHeight: var(--size-font-line-height-nav-utility);
+    }
+    &--footer-menu {
+        --_color: var(--color-font-link-footer-menu-default);
+        --_colorHover: var(--color-font-link-footer-menu-hover);
+        --_decoration: none;
+        --_decorationHover: underline;
+        --_size: var(--size-font-link-footer-menu);
+        --_lineHeight: var(--size-font-line-height-footer-menu);
+    }
+    &--footer-utility {
+        --_color: var(--color-font-link-footer-utility-default);
+        --_colorHover: var(--color-font-link-footer-utility-hover);
+        --_decoration: none;
+        --_decorationHover: none;
+        --_size: var(--size-font-link-footer-utility);
+    }
+    &--title {
+        --_color: var(--color-font-link-title-default);
+        --_colorHover: var(--color-font-link-title-hover);
+        --_decoration: none;
+        --_decorationHover: none;
+        --_size: var(--size-font-link-title);
+        --_transform: uppercase;
+        --_lineHeight: var(--size-font-line-height-title);
+    }
+}

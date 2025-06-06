@@ -1,0 +1,20 @@
+{
+  "name": "@bcbst/tokens",
+  "version": "0.0.1-beta.0",
+  "license": "ISC",
+  "description": "BCBST Design Tokens",
+  "devDependencies": {
+    "style-dictionary": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marvinpontiac/monorepo"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "node ./build.js",
+    "preview-ddl": "npm link"
+  }
+}

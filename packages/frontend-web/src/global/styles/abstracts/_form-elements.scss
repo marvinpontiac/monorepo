@@ -1,0 +1,18 @@
+%form-input {
+    min-height: var(--size-form-input-min-height);
+    border: var(--size-border-small) solid transparent;
+    background-color: var(--color-background-input);
+    color: var(--color-font-input);
+    font-weight: var(--font-weight-regular);
+    padding-inline: var(--size-form-input-padding-x);
+    
+    &::placeholder {
+        color: var(--color-font-placeholder);
+        font-weight: var(--font-weight-semibold);
+    }
+    &:focus-visible {
+        border-radius: 0;
+        outline: var(--size-border-small) solid var(--color-border-focus-dark);
+        outline-offset: 0;
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "size": {
+        "padding": {
+            "block": {
+                "table": {
+                    "cell": {
+                        "value": "10px"
+                    }
+                }
+            },
+            "inline": {
+                "table": {
+                    "cell": {
+                        "value": "4px"
+                    }
+                }
+            }
+        }
+    }
+}

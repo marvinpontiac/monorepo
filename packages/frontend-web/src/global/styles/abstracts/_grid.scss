@@ -1,0 +1,15 @@
+@mixin start-at-col($col) {
+  grid-column-start: $col;
+}
+
+@mixin make-col($col) {
+  grid-column: auto / span $col * 2;
+}
+
+@mixin flex-grid-gap-responsive {
+  gap: var(--size-grid-gap-small);
+
+  @include container-above(sm) {
+    gap: var(--size-grid-gap-medium);
+  }
+}

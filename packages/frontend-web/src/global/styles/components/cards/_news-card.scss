@@ -1,0 +1,108 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-card--news {
+  @include box-shadow;
+
+  .bcbst-card__img {
+    display: block;
+    height: auto;
+
+    .bcbst-card__topic {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: var(--color-font-button-primary-default);
+      background: var(--color-interactive-primary-default);
+      font: var(--font-body-p5);
+      font-weight: var(--font-weight-semibold);
+      padding: var(--size-grid-gap-small) var(--size-grid-padding-large);
+
+      html[lang="zh-cn"] & {
+        font: var(--font-cn-body-p5);
+        font-weight: var(--font-weight-semibold);
+      }
+    }
+  }
+
+  .bcbst-card__news-type {
+    color: var(--color-gray-dark16);
+    font-weight: var(--font-weight-bold);
+    padding: calc(var(--size-spacing-base) * 2.5) calc(var(--size-spacing-base) * 2.5)
+      var(--size-spacing-expert-cards-card-padding);
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: calc(100% - rem-calc(20));
+      left: calc(var(--size-spacing-base) * 2.5);
+      bottom: 0;
+      height: 1px;
+      background-color: var(--color-gray-light16);
+    }
+  }
+
+    .bcbst-card__heading {
+      text-decoration: none;
+      color: var(--color-gray-dark64);
+      font: var(--font-body-paragraph);
+      font-family: var(--font-family-heading);
+      font-weight: var(--font-weight-semibold);
+
+      html[lang="zh-cn"] & {
+        font: var(--font-cn-body-paragraph);
+        font-family: var(--font-cn-family-heading);
+        font-weight: var(--font-weight-semibold);
+      }
+    }
+
+  .bcbst-card__description {
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--color-gray-dark64);
+  }
+
+  .bcbst-card__cta {
+    justify-content: flex-end;
+    margin-bottom: var(--size-spacing-medium);
+    margin-right: var(--size-spacing-small);
+    padding-top: var(--size-spacing-medium);
+    margin-top: auto;
+  }
+
+  .bcbst-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-grid-gap-medium) var(--size-spacing-small);
+    border-top: 1px solid var(--color-gray-light16);
+  }
+
+  .bcbst-card__brand {
+    color: var(--color-gray-dark48);
+    font: var(--font-body-eyebrow);
+    text-transform: uppercase;
+
+    html[lang="zh-cn"] & {
+      font: var(--font-cn-body-eyebrow);
+    }
+  }
+
+  .bcbst-card__date {
+    color: var(--color-gray-dark48);
+    font: var(--font-body-p4);
+
+    html[lang="zh-cn"] & {
+      font: var(--font-cn-body-p4);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "color": {
+        "brand": {
+            "blue": {
+                "value": "#0f3cff"
+            },
+            "offWhite": {
+                "value": "#fffef5"
+            },
+            "warmGray": {
+                "value": "#aba18b"
+            },
+            "navy": {
+                "value": "#000E57"
+            },
+            "coolLilac": {
+                "value": "#CCD1FF"
+            },
+            "softAdobe": {
+                "value": "#DE8269"
+            },
+            "lightJade": {
+                "value": "#93C8A1"
+            }
+        }
+    }
+}

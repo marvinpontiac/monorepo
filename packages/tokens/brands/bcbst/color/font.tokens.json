@@ -1,0 +1,137 @@
+{
+    "color": {
+        "font": {
+            "base": {
+                "value": "{color.gray.dark48.value}"
+            },
+            "reversed": {
+                "value": "{color.gray.light40.value}"
+            },
+            "warning": {
+                "value": "#F8B11E"
+            },
+            "error": {
+                "value": "#D31245"
+            },
+            "button": {
+                "primary": {
+                    "default": {
+                        "value": "{color.font.reversed.value}"
+                    }
+                },
+                "text": {
+                    "primary": {
+                        "default": {
+                            "value": "{color.interactive.primary.default.value}"
+                        },
+                        "hover": {
+                            "value": "{color.interactive.primary.hover.value}"
+                        }
+                    },
+                    "secondary": {
+                        "default": {
+                            "value": "{color.gray.dark64.value}"
+                        },
+                        "hover": {
+                            "value": "{color.interactive.secondary.default.value}"
+                        }
+                    },
+                    "reversed": {
+                        "default": {
+                            "value": "{color.gray.light40.value}"
+                        },
+                        "hover": {
+                            "value": "{color.gray.light40.value}"
+                        }
+                    }
+                },
+                "secondary": {
+                    "default": {
+                        "value": "{color.gray.dark56.value}"
+                    }
+                },
+                "reversed": {
+                    "default": {
+                        "value": "{color.gray.light40.value}"
+                    }
+                }
+            },
+            "link": {
+                "inline": {
+                    "default": {
+                        "value": "{color.interactive.primary.default.value}"
+                    },
+                    "hover": {
+                        "value": "{color.interactive.primary.hover.value}"
+                    }
+                },
+                "nav": {
+                    "menu": {
+                        "default": {
+                            "value": "{color.gray.dark64.value}"
+                        },
+                        "hover": {
+                            "value": "{color.interactive.secondary.default.value}"
+                        }
+                    },
+                    "utility": {
+                        "default": {
+                            "value": "{color.font.reversed.value}"
+                        },
+                        "hover": {
+                            "value": "{color.font.reversed.value}"
+                        }
+                    }
+                },
+                "footer": {
+                    "menu": {
+                        "default": {
+                            "value": "{color.font.reversed.value}"
+                        },
+                        "hover": {
+                            "value": "{color.font.reversed.value}"
+                        }
+                    },
+                    "utility": {
+                        "default": {
+                            "value": "{color.gray.dark16.value}"
+                        },
+                        "hover": {
+                            "value": "{color.font.reversed.value}"
+                        }
+                    }
+                },
+                "tab": {
+                    "default": {
+                        "value": "{color.gray.dark64.value}"
+                    },
+                    "hover": {
+                        "value": "{color.interactive.primary.hover.value}"
+                    }
+                },
+                "tabReversed": {
+                    "default": {
+                        "value": "{color.font.reversed.value}"
+                    },
+                    "hover": {
+                        "value": "{color.font.reversed.value}"
+                    }
+                },
+                "title": {
+                    "default": {
+                        "value": "{color.gray.dark64.value}"
+                    },
+                    "hover": {
+                        "value": "{color.interactive.primary.default.value}"
+                    }
+                }
+            },
+            "placeholder": {
+                "value": "{color.gray.light8.value}"
+            },
+            "formLabel": {
+                "value": "{color.gray.dark64.value}"
+            }
+        }
+    }
+}

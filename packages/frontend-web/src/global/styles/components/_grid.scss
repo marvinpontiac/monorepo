@@ -1,0 +1,61 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-container {
+  container: container / inline-size;
+}
+
+.bcbst-grid {
+  display: grid;
+  max-width: var(--size-content-contained-width);
+  padding-right: var(--size-grid-padding-small);
+  padding-left: var(--size-grid-padding-small);
+  gap: var(--size-grid-gap-small);
+  grid-template-columns: repeat(24, 1fr);
+  margin-inline: auto;
+
+  @include container-above(tablet) {
+    padding-right: var(--size-grid-padding-medium);
+    padding-left: var(--size-grid-padding-medium);
+    gap: var(--size-grid-gap-medium);
+  }
+
+  @include container-above(desktop) {
+    padding-right: var(--size-grid-padding-large);
+    padding-left: var(--size-grid-padding-large);
+  }
+
+  @for $i from 1 through 12 {
+    &__col-#{$i} {
+      @include make-col($i);
+    }
+  }
+
+  @for $i from 1 through 12 {
+    &__col-md-#{$i} {
+      @include container-below(desktop) {
+        @include make-col($i);
+      }
+    }
+  }
+
+  @for $i from 1 through 12 {
+    &__col-sm-#{$i} {
+      @include container-below(tablet) {
+        @include make-col($i);
+      }
+    }
+  }
+
+  @for $i from 1 through 12 {
+    &__col-xs-#{$i} {
+      @include container-below(xs) {
+        @include make-col($i);
+      }
+    }
+  }
+}

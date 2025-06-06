@@ -1,0 +1,64 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-card--offset-text {
+    &-link {
+        color: var(--color-font-base);
+        text-decoration: none;
+
+        &:visited {
+            color: var(--color-font-base);
+        }
+
+        &:hover {
+            color: var(--color-font-base);
+
+            .bcbst-card__heading {
+                color: var(--_colorHover);
+            }
+        }
+    }
+
+    .bcbst-card__img {
+        height: auto;
+
+        img {
+            height: auto;
+            aspect-ratio: 2 / 1;
+        }
+    }
+
+    .bcbst-card__body {
+        padding: calc(var(--size-spacing-base) * 2) var(--size-spacing-base) 0;
+    }
+
+    .bcbst-card__cta {
+        padding: 0 var(--size-spacing-base) calc(var(--size-spacing-base) * 4.375);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--size-spacing-base);
+
+        @include respond-above(desktop) {
+            padding: 0 var(--size-spacing-base) calc(var(--size-spacing-base) * 3.25);
+        }
+    }
+
+    .bcbst-card__heading {
+        padding: 0;
+        margin: 0;
+        font: var(--font-heading-h5);
+
+        html[lang="zh-cn"] & {
+            font: var(--font-cn-heading-h5);
+        }
+    }
+
+    .bcbst-card__description {
+        padding: calc(var(--size-spacing-base) * 2) var(--size-spacing-base);
+    }
+}

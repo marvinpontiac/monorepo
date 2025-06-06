@@ -1,0 +1,92 @@
+import { Canvas, Meta, Unstyled } from '@storybook/blocks';
+import TokenExample from './TokenExample';
+import '../../../../global/styles/sb-markdown.scss';
+
+<Meta title="Design System/Typography"/>
+<Unstyled>
+# Typography
+
+## Design tokens
+
+Typography is defined as Design Tokens and then installed as a dev dependency inside your project:
+
+<pre>
+  ```bash 
+ 
+ npm install @bsbst/tokens <>
+  ```
+</pre>
+
+### CSS variables are included in the core CSS
+
+<pre>
+```css
+.bsbst-component {
+    --_bold: var(--font-weight-bold); // set a private variable
+    font-weight: var(--font-weight-bold); // directly use a root variable
+}
+```
+</pre>
+
+### Import tokens as ES6 Variables to use in JS
+
+<pre>
+```js
+import {
+  FONT_WEIGHT_SEMIBOLD,
+} from '../../../data/tokens.es6';
+```
+</pre>
+
+## STIX Two - Headlines
+
+<div style={{ fontFamily: 'var(--font-family-heading)' }}>
+    The STIX Two fonts consist of two variable text fonts (Roman and Italic), eight static text (Regular to Bold in both roman and italic variants) and one Math font (currently only available for direct download from the repository). Together, they
+    provide a uniform set of fonts that can be used throughout the production process.
+  
+  TYPEFACE SPECIMEN
+<div style={{ fontSize: 'var(--size-font-large-03)' }}>Aa</div>
+<pre>ABCDEFGHIJKLMNOPQRSTUVWXYZ </pre>
+<pre>abcdefghijklmnopqrstuvwxyz</pre>
+<pre>1234567890!@#$%*&*()=?</pre>
+
+### Font Weights:
+
+<TokenExample type="weight" />
+
+### Font Style:
+
+<TokenExample type="style" />
+
+### Heading & Title Styles:
+
+<TokenExample type="heading" />
+
+</div>
+
+## Aileron - Content
+
+<div style={{ fontFamily: 'var(--font-family-body)' }}>
+  <div>
+  Aileron is a sans serif font which adds my own interpretation with reference to a typeface classified as Neo-Grotesque including Helvetica. In order to make it easy to distinguish it from the capital letter “I”, we made the letter of the lower case letter “l” curved at the end portion as a slight adjustment for the text for the text.
+  </div>
+  <div>TYPEFACE SPECIMEN</div>
+<div style={{ fontSize: 'var(--size-font-large-03)' }}>Aa</div>
+<pre>ABCDEFGHIJKLMNOPQRSTUVWXYZ </pre>
+<pre>abcdefghijklmnopqrstuvwxyz</pre>
+<pre>1234567890!@#$%*&*()=?</pre>
+
+### Font Weights:
+
+<TokenExample type="weight" />
+
+### Font Style:
+
+<TokenExample type="style" />
+
+### Body Label & Block Quote Styles:
+
+<TokenExample type="body" />
+
+</div>
+</Unstyled>

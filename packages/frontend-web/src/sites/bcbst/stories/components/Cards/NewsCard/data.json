@@ -1,0 +1,14 @@
+{
+  "image": [
+  ],
+  "heading": "Promo Card Heading",
+  "brand": "BCBST",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis turpis eu ligula placerat fringilla. Vestibulum convallis tellus nec blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis turpis eu ligula placerat fringilla. Vestibulum convallis tellus nec blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis turpis eu ligula placerat fringilla. Vestibulum convallis tellus nec blandit.",
+  "ctaLink": {
+    "label": "Read more",
+    "href": "#"
+  },
+  "topic": "interactive",
+  "date": "Jan 17, 2025",
+  "newsType": "News"
+}

@@ -1,0 +1,68 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.bcbst-product-card {
+    &.bcbst-card {
+        .bcbst-card__heading, .bcbst-card__description, .bcbst-card__price, .bcbst-card__img  {
+            font: var(--font-body-paragraph);
+            color: var(--color-gray-dark64);
+            padding-left: calc(var(--size-spacing-base) * 2.5);
+            padding-right: calc(var(--size-spacing-base) * 2.5);
+
+            html[lang="zh-cn"] & {
+                font: var(--font-cn-body-paragraph);
+            }
+
+            @include respond-below(desktop) {
+                padding-left: calc(var(--size-spacing-base) * 1.5);
+                padding-right: calc(var(--size-spacing-base) * 1.5);
+            }
+        }
+
+        .bcbst-card__img  {
+            height: unset;
+            padding-left: calc(var(--size-spacing-base) * 5);
+            padding-right: calc(var(--size-spacing-base) * 5);
+            
+            > * {
+                pointer-events: none;
+            }
+        }
+
+        .bcbst-card__heading {
+            font-weight: var(--font-weight-regular);
+
+            a {
+                font: inherit;
+                text-decoration: none;          
+                color: inherit;
+            }
+            &, .bcbst-card__description {
+                color: var(--color-gray-dark64);
+            }
+        }
+    }
+
+    .bcbst-carousel__slide & {
+        &.bcbst-card {
+            .bcbst-card__heading, .bcbst-card__description, .bcbst-card__price {
+                padding-left: calc(var(--size-spacing-base) * 1.25);
+                padding-right: calc(var(--size-spacing-base) * 1.25);
+    
+                @include respond-below(desktop) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }  
+            }
+
+            .bcbst-card__img  {
+                padding-left: calc(var(--size-spacing-base) * 3.75);
+                padding-right: calc(var(--size-spacing-base) * 3.75);
+            }
+        }
+    }
+}

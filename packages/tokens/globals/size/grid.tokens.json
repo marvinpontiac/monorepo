@@ -1,0 +1,34 @@
+{
+    "size": {
+        "grid": {
+            "gap": {
+                "small": {
+                    "value": "5px",
+                    "comment": "5px"
+                },
+                "medium": {
+                    "value": "12px",
+                    "comment": "12px"
+                },
+                "large": {
+                    "value": "20px",
+                    "comment": "20px"
+                }
+            },
+            "padding": {
+                "small": {
+                    "value": "10px",
+                    "comment": "10px"
+                },
+                "medium": {
+                    "value": "30px",
+                    "comment": "30px"
+                },
+                "large": {
+                    "value": "50px",
+                    "comment": "50px"
+                }
+            }
+        }
+    }
+}

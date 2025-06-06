@@ -1,0 +1,36 @@
+{
+    "size": {
+        "form": {
+            "input": {
+                "paddingX": {
+                    "value": "10px",
+                    "comment": "10px"
+                },
+                "minHeight": {
+                    "value": "48px",
+                    "comment": "48px"
+                }
+            },
+            "textarea": {
+                "paddingX": {
+                    "value": "15px",
+                    "comment": "15px"
+                },
+                "paddingY": {
+                    "value": "15px",
+                    "comment": "15px"
+                }
+            },
+            "select": {
+                "paddingX": {
+                    "value": "9px",
+                    "comment": "9px"
+                },
+                "minHeight": {
+                    "value": "48px",
+                    "comment": "48px"
+                }
+            }
+        }
+    }
+}

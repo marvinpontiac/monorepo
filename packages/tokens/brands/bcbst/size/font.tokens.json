@@ -1,0 +1,162 @@
+{
+    "size": {
+        "font": {
+            "small": {
+                "1": {
+                    "value": "10px",
+                    "comment": "10px"
+                },
+                "2": {
+                    "value": "12px",
+                    "comment": "12px"
+                },
+                "2-5": {
+                    "value": "13px",
+                    "comment": "13px"
+                },
+                "3": {
+                    "value": "14px",
+                    "comment": "14px"
+                }
+            },
+            "medium": {
+                "1": {
+                    "value": "16px",
+                    "comment": "16px"
+                },
+                "2": {
+                    "value": "18px",
+                    "comment": "18px"
+                },
+                "2-5": {
+                    "value": "20px",
+                    "comment": "20px"
+                },
+                "3": {
+                    "value": "22px",
+                    "comment": "22px"
+                },
+                "4": {
+                    "value": "24px",
+                    "comment": "24px"
+                },
+                "5": {
+                    "value": "28px",
+                    "comment": "28px"
+                },
+                "6": {
+                    "value": "30px",
+                    "comment": "30px"
+                }
+            },
+            "large": {
+                "1": {
+                    "value": "36px",
+                    "comment": "36px"
+                },
+                "2": {
+                    "value": "44px",
+                    "comment": "44px"
+                },
+                "3": {
+                    "value": "56px",
+                    "comment": "56px"
+                }
+            },
+            "lineHeight": {
+                "1": {
+                    "value": "16px",
+                    "comment": "16px"
+                },
+                "2": {
+                    "value": "24px",
+                    "comment": "24px"
+                },
+                "3": {
+                    "value": "32px",
+                    "comment": "32px"
+                },
+                "4": {
+                    "value": "40px",
+                    "comment": "40px"
+                },
+                "5": {
+                    "value": "44px",
+                    "comment": "44px"
+                },
+                "6": {
+                    "value": "48px",
+                    "comment": "48px"
+                },
+                "7": {
+                    "value": "56px",
+                    "comment": "56px"
+                },
+                "8": {
+                    "value": "64px",
+                    "comment": "64px"
+                },
+                "navUtility": {
+                    "value": "{size.font.lineHeight.2}",
+                    "comment": "24px"
+                },
+                "footerMenu": {
+                    "value": "{size.font.lineHeight.2}",
+                    "comment": "24px"
+                },
+                "title": {
+                    "value": "{size.font.lineHeight.2}",
+                    "comment": "24px"
+                }
+            },
+            "letterSpacing": {
+                "small": {
+                    "value": "1px",
+                    "comment": "1px"
+                },
+                "button": {
+                    "value": "{size.font.letterSpacing.small.value}",
+                    "comment": "1px"
+                },
+                "tab": {
+                    "value": "0.96px",
+                    "comment": "0.96px"
+                }
+            },
+            "button": {
+                "value": "{size.font.small.2}",
+                "comment": "12px"
+            },
+            "link": {
+                "default": {
+                    "value": "{size.font.small.2}",
+                    "comment": "12px"
+                },
+                "navMenu": {
+                    "value": "{size.font.small.2}",
+                    "comment": "12px"
+                },
+                "navUtility": {
+                    "value": "{size.font.small.3}",
+                    "comment": "14px"
+                },
+                "footerMenu": {
+                    "value": "{size.font.medium.1}",
+                    "comment": "16px"
+                },
+                "footerUtility": {
+                    "value": "{size.font.small.2}",
+                    "comment": "12px"
+                },
+                "title": {
+                    "value": "{size.font.small.3}",
+                    "comment": "14px"
+                }
+            },
+            "line-height": {
+                "value": "22px",
+                "comment": "22px"
+            }
+        }
+    }
+}
