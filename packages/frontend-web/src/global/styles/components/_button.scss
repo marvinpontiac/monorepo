@@ -1,0 +1,218 @@
+// Follow BEM naming convention
+// Reduce nesting for readability, < three levels when possible:
+//    .block
+//      &__element
+//      &--modifier
+// Unless working with third party classes, classes should be all lower kebab-case
+
+.ddl-btn {
+  --_background: none;
+  --_backgroundHover: none;
+  --_borderColor: transparent;
+  --_color: var(--color-interactive-primary-default);
+  --_colorHover: var(--color-interactive-primary-hover);
+  --_icon: var(--color-background-button-primary);
+  --_transform: uppercase;
+  --_weight: var(--font-weight-bold);
+  --_size: var(--size-font-button);
+  --_letterSpacing: var(--size-font-letter-spacing-button);
+  --_lineHeight: 1.33333333;
+
+  @extend %button-hyperlinks;
+
+  display: inline-flex;
+  max-width: var(--size-width-button-max);
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--size-spacing-small);
+  border: var(--size-border-small) solid var(--_borderColor);
+  background: var(--_background);
+  color: var(--_color);
+  cursor: pointer;
+  gap: rem-calc(4);
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+
+  > span {
+    flex-basis: fit-content;
+  }
+
+  &::after {
+    content: '';
+    transition: all 200ms ease;
+  }
+
+  &:hover {
+    background: var(--_backgroundHover);
+    color: var(--_colorHover);
+  }
+
+  :focus {
+    outline: transparent;
+  }
+
+  &:focus-visible {
+    --_backgroundHover: var(--_background);
+    border-radius: 0;
+    color: var(--_color);
+    outline-offset: 0;
+  }
+
+  &[disabled],
+  &[aria-disabled='true'] {
+    --_backgroundHover: var(--_background);
+  }
+
+  &--caret {
+    &::after {
+      width: rem-calc(6);
+      min-width: rem-calc(6);
+      height: rem-calc(6);
+      border-top: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      margin-left: rem-calc(2);
+      transform: rotate(45deg);
+    }
+    .parent-link:hover &:not([disabled], .disabled)::after,
+     &:not([disabled], .disabled):hover::after {
+      transform: translateX(rem-calc(3)) rotate(45deg);
+    }
+  }
+
+  &--expand-all {
+    &::after {
+      width: rem-calc(6);
+      min-width: rem-calc(6);
+      height: rem-calc(6);
+      border-top: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      margin-top: rem-calc(-4);
+      transform: rotate(135deg);
+    }
+    .parent-link:hover &:not([disabled], .disabled)::after,
+     &:not([disabled], .disabled):hover::after {
+      transform: translateY(rem-calc(3)) rotate(135deg);
+    }
+  }
+
+  &--external {
+    &::after {
+      width: rem-calc(10);
+      min-width: rem-calc(9);
+      height: rem-calc(9);
+      margin-left: rem-calc(3.5);
+      background-color: currentColor;
+      clip-path: $clip-path-icon-external;
+    }
+    &:not([disabled], .disabled):hover::after {
+      transform: translate(rem-calc(3), rem-calc(-3));
+    }
+  }
+
+  &--video {
+    &::after {
+      min-width: rem-calc(17);
+      width: rem-calc(17);
+      height: rem-calc(17);
+      margin-left: rem-calc(1);
+      background-color: currentColor;
+      clip-path: $clip-path-icon-video-default;
+    }
+    &:not([disabled], .disabled):hover::after {
+      clip-path: $clip-path-icon-video-hover;
+    }
+  }
+
+  &--download {
+    &::after {
+      width: rem-calc(15);
+      min-width: rem-calc(15);
+      height: rem-calc(15);
+      margin-left: rem-calc(0.5);
+      background-color: currentColor;
+      clip-path: $clip-path-icon-download-default;
+    }
+    &:not([disabled], .disabled):hover::after {
+      clip-path: $clip-path-icon-download-hover;
+    }
+  }
+
+  &--primary,
+  &--secondary,
+  &--tertiary,
+  &--reversed {
+    width: 100%;
+    height: var(--size-height-button);
+    text-transform: uppercase;
+  }
+
+  &--primary,
+  &--secondary,
+  &--tertiary {
+    &:focus-visible {
+      outline: var(--size-border-small) solid var(--color-border-focus-dark);
+    }
+  }
+
+  &--primary,
+  &--primary:visited {
+    --_background: var(--color-background-button-primary-default);
+    --_backgroundHover: var(--color-background-button-primary-hover);
+    --_color: var(--color-font-button-primary-default);
+    --_colorHover: var(--color-font-button-primary-default);
+  }
+
+  &--secondary,
+  &--secondary:visited {
+    --_background: var(--color-background-button-secondary-default);
+    --_backgroundHover: var(--color-background-button-secondary-hover);
+    --_borderColor: var(--color-background-button-secondary-hover);
+    --_color: var(--color-font-button-secondary-default);
+    --_colorHover: var(--color-font-button-secondary-default);
+  }
+
+  &--tertiary,
+  &--tertiary:visited {
+    --_background: var(--color-background-button-tertiary-default);
+    --_backgroundHover: var(--color-background-button-tertiary-hover);
+    --_color: var(--color-font-button-tertiary-default);
+    --_colorHover: var(--color-font-button-tertiary-default);
+  }
+
+  &--reversed,
+  &--reversed:visited {
+    --_background: var(--color-background-button-reversed-default);
+    --_backgroundHover: var(--color-background-button-reversed-hover);
+    --_borderColor: var(--color-border-button-reversed);
+    --_color: var(--color-font-button-reversed-default);
+    --_colorHover: var(--color-font-button-reversed-default);
+  }
+
+  &--text-primary,
+  &--text-secondary,
+  &--text-reversed {
+    --_borderColor: transparent;
+    box-sizing: border-box;
+    padding: var(--size-spacing-base) 0;
+    margin-block: calc(var(--size-spacing-base) * -1);
+  }
+
+  &--text-primary,
+  &--text-primary:visited {
+    --_color: var(--color-font-button-text-primary-default);
+    --_colorHover: var(--color-font-button-text-primary-hover);
+  }
+
+  &--text-secondary,
+  &--text-secondary:visited {
+    --_color: var(--color-font-button-text-secondary-default);
+    --_colorHover: var(--color-font-button-text-secondary-hover);
+  }
+
+  &--text-reversed,
+  &--text-reversed:visited {
+    --_color: var(--color-font-button-reversed-default);
+    --_colorHover: var(--color-font-button-reversed-default);
+  }
+}

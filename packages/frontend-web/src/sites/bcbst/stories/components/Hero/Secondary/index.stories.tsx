@@ -63,45 +63,6 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj;
 
-export const JumplinkLightTextWithDarkOverlay: Story = {
-  args: {
-    ...data.lightText.content,
-    ...data.lightText.jumpLinks,
-    headingTag: 'h1',
-    heroVariant: 'bcbst-hero--secondary-jumplinks',
-    styles: ['bcbst-hero', 'bcbst-hero--secondary', 'bcbst-hero--text-light', 'bcbst-hero--overlay-dark'],
-  },
-} satisfies Story;
-export const JumplinkLightTextWithoutOverlay: Story = {
-  args: {
-    ...data.lightText.content,
-    ...data.lightText.jumpLinks,
-    headingTag: 'h1',
-    heroVariant: 'bcbst-hero--secondary-jumplinks',
-    styles: ['bcbst-hero', 'bcbst-hero--secondary', 'bcbst-hero--text-light'],
-  },
-} satisfies Story;
-
-export const JumplinkDarkTextWithLightOverlay: Story = {
-  args: {
-    ...data.darkText.content,
-    ...data.darkText.jumpLinks,
-    headingTag: 'h1',
-    heroVariant: 'bcbst-hero--secondary-jumplinks',
-    styles: ['bcbst-hero', 'bcbst-hero--secondary', 'bcbst-hero--text-dark', 'bcbst-hero--overlay-light'],
-  },
-} satisfies Story;
-
-export const JumplinkDarkTextWithoutOverlay: Story = {
-  args: {
-    ...data.darkText.content,
-    ...data.darkText.jumpLinks,
-    headingTag: 'h1',
-    heroVariant: 'bcbst-hero--secondary-jumplinks',
-    styles: ['bcbst-hero', 'bcbst-hero--secondary', 'bcbst-hero--text-dark'],
-  },
-} satisfies Story;
-
 export const LightTextWithDarkOverlay: Story = {
   args: {
     ...data.lightText.content,

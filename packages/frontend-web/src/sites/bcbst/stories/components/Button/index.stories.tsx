@@ -23,38 +23,38 @@ const meta: Meta = {
       <>
         <h2>Anchor elements</h2>
         <div style={{ display: 'flex', gap: 'var(--size-spacing-medium)', flexWrap: 'wrap', backgroundColor: reversedBackgroundColor, padding: reversedPadding }}>
-          <a href="/index#hello-world" className={`ddl-btn ${args.variant} ddl-btn--caret`}>
+          <a href="/index#hello-world" className={`bcbst-btn ${args.variant} bcbst-btn--caret`}>
             {args.label}
           </a>
-          <a href="/index2#hello-world" className={`ddl-btn ${args.variant} ddl-btn--download`}>
+          <a href="/index2#hello-world" className={`bcbst-btn ${args.variant} bcbst-btn--download`}>
             Download document
           </a>
-          <a href="/index3#hello-world" className={`ddl-btn ${args.variant} ddl-btn--video`}>
+          <a href="/index3#hello-world" className={`bcbst-btn ${args.variant} bcbst-btn--video`}>
             Watch video
           </a>
-          <a href="/index4#hello-world" className={`ddl-btn ${args.variant} ddl-btn--external`}>
+          <a href="/index4#hello-world" className={`bcbst-btn ${args.variant} bcbst-btn--external`}>
             External link
           </a>
-          <a href="/index5#hello-world" aria-disabled="true" className={`ddl-btn ${args.variant}`}>
+          <a href="/index5#hello-world" aria-disabled="true" className={`bcbst-btn ${args.variant}`}>
             Disabled
           </a>
         </div>
 
         <h2>Button elements</h2>
         <div style={{ display: 'flex', gap: 'var(--size-spacing-medium)', flexWrap: 'wrap', backgroundColor: reversedBackgroundColor, padding: reversedPadding }}>
-          <button type="button" className={`ddl-btn ${args.variant} ddl-btn--caret`}>
+          <button type="button" className={`bcbst-btn ${args.variant} bcbst-btn--caret`}>
             {args.label}
           </button>
-          <button type="button" className={`ddl-btn ${args.variant} ddl-btn--download`}>
+          <button type="button" className={`bcbst-btn ${args.variant} bcbst-btn--download`}>
             Download document
           </button>
-          <button type="button" className={`ddl-btn ${args.variant} ddl-btn--video`}>
+          <button type="button" className={`bcbst-btn ${args.variant} bcbst-btn--video`}>
             Watch video
           </button>
-          <button type="button" className={`ddl-btn ${args.variant} ddl-btn--external`}>
+          <button type="button" className={`bcbst-btn ${args.variant} bcbst-btn--external`}>
             External link
           </button>
-          <button type="button" disabled aria-disabled="true" className={`ddl-btn ${args.variant}`}>
+          <button type="button" disabled aria-disabled="true" className={`bcbst-btn ${args.variant}`}>
             Disabled
           </button>
         </div>
@@ -69,12 +69,12 @@ type Story = StoryObj<typeof meta>;
 export const Button: Story = {
   args: {
     label: 'string',
-    variant: 'ddl-btn--primary',
-    icon: 'ddl-btn--caret'
+    variant: 'bcbst-btn--primary',
+    icon: 'bcbst-btn--caret'
   },
   render: args => {
     return (
-      <a href="/index2#hello-world" className={`ddl-btn ${args.variant} ${args.icon}`}>
+      <a href="/index2#hello-world" className={`bcbst-btn ${args.variant} ${args.icon}`}>
          {args.label}
       </a>
     )
@@ -84,48 +84,48 @@ export const Button: Story = {
 export const Primary: Story = {
   args: {
     label: 'Internal link',
-    variant: 'ddl-btn--primary',
+    variant: 'bcbst-btn--primary',
   },
 } satisfies Story;
 
 export const Secondary: Story = {
   args: {
     label: 'Internal link',
-    variant: 'ddl-btn--secondary',
+    variant: 'bcbst-btn--secondary',
   },
 } satisfies Story;
 
 export const Tertiary: Story = {
   args: {
     label: 'Internal link',
-    variant: 'ddl-btn--tertiary',
+    variant: 'bcbst-btn--tertiary',
   },
 } satisfies Story;
 
 export const Reversed: Story = {
   args: {
     label: 'Internal link',
-    variant: 'ddl-btn--reversed',
+    variant: 'bcbst-btn--reversed',
   },
 } satisfies Story;
 
 export const TextPrimary: Story = {
   args: {
     label: 'Internal link',
-    variant: 'ddl-btn--text-primary',
+    variant: 'bcbst-btn--text-primary',
   },
 } satisfies Story;
 
 export const TextSecondary: Story = {
   args: {
     label: 'Internal link',
-    variant: 'ddl-btn--text-secondary',
+    variant: 'bcbst-btn--text-secondary',
   },
 } satisfies Story;
 
 export const TextReversed: Story = {
   args: {
     label: 'Internal link',
-    variant: 'ddl-btn--text-reversed',
+    variant: 'bcbst-btn--text-reversed',
   },
 } satisfies Story;
