@@ -58,20 +58,6 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj;
 
-export const LightTextWithDarkOverlayCentered: Story = {
-  args: {
-    ...data.lightText,
-    styles: ['bcbst-hero', 'bcbst-hero--primary', 'bcbst-hero--centered', 'bcbst-hero--text-light', 'bcbst-hero--overlay-dark'],
-  },
-};
-
-export const LightTextWithoutOverlayCentered: Story = {
-  args: {
-    ...data.lightText,
-    styles: ['bcbst-hero', 'bcbst-hero--primary', 'bcbst-hero--centered', 'bcbst-hero--text-light'],
-  },
-};
-
 export const LightTextWithDarkOverlayLeft: Story = {
   args: {
     ...data.lightText,
@@ -83,20 +69,6 @@ export const LightTextWithoutOverlayLeft: Story = {
   args: {
     ...data.lightText,
     styles: ['bcbst-hero', 'bcbst-hero--primary', 'bcbst-hero--text-light'],
-  },
-};
-
-export const DarkTextWithLightOverlayCentered: Story = {
-  args: {
-    ...data.darkText,
-    styles: ['bcbst-hero', 'bcbst-hero--primary', 'bcbst-hero--centered', 'bcbst-hero--text-dark', 'bcbst-hero--overlay-light'],
-  },
-};
-
-export const DarkTextWithoutOverlayCentered: Story = {
-  args: {
-    ...data.darkText,
-    styles: ['bcbst-hero', 'bcbst-hero--primary', 'bcbst-hero--centered', 'bcbst-hero--text-dark'],
   },
 };
 

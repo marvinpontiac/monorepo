@@ -5,7 +5,7 @@
 //      &--modifier
 // Unless working with third party classes, classes should be all lower kebab-case
 
-.ddl-btn {
+.bcbst-btn {
   --_background: none;
   --_backgroundHover: none;
   --_borderColor: transparent;
@@ -64,38 +64,6 @@
     --_backgroundHover: var(--_background);
   }
 
-  &--caret {
-    &::after {
-      width: rem-calc(6);
-      min-width: rem-calc(6);
-      height: rem-calc(6);
-      border-top: 2px solid currentColor;
-      border-right: 2px solid currentColor;
-      margin-left: rem-calc(2);
-      transform: rotate(45deg);
-    }
-    .parent-link:hover &:not([disabled], .disabled)::after,
-     &:not([disabled], .disabled):hover::after {
-      transform: translateX(rem-calc(3)) rotate(45deg);
-    }
-  }
-
-  &--expand-all {
-    &::after {
-      width: rem-calc(6);
-      min-width: rem-calc(6);
-      height: rem-calc(6);
-      border-top: 2px solid currentColor;
-      border-right: 2px solid currentColor;
-      margin-top: rem-calc(-4);
-      transform: rotate(135deg);
-    }
-    .parent-link:hover &:not([disabled], .disabled)::after,
-     &:not([disabled], .disabled):hover::after {
-      transform: translateY(rem-calc(3)) rotate(135deg);
-    }
-  }
-
   &--external {
     &::after {
       width: rem-calc(10);
@@ -107,34 +75,6 @@
     }
     &:not([disabled], .disabled):hover::after {
       transform: translate(rem-calc(3), rem-calc(-3));
-    }
-  }
-
-  &--video {
-    &::after {
-      min-width: rem-calc(17);
-      width: rem-calc(17);
-      height: rem-calc(17);
-      margin-left: rem-calc(1);
-      background-color: currentColor;
-      clip-path: $clip-path-icon-video-default;
-    }
-    &:not([disabled], .disabled):hover::after {
-      clip-path: $clip-path-icon-video-hover;
-    }
-  }
-
-  &--download {
-    &::after {
-      width: rem-calc(15);
-      min-width: rem-calc(15);
-      height: rem-calc(15);
-      margin-left: rem-calc(0.5);
-      background-color: currentColor;
-      clip-path: $clip-path-icon-download-default;
-    }
-    &:not([disabled], .disabled):hover::after {
-      clip-path: $clip-path-icon-download-hover;
     }
   }
 

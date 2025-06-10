@@ -16,18 +16,6 @@
             "spreadRadius": {
                 "value": "4px",
                 "comment": "4px"
-            },
-            "social-button-offsetY": {
-                "value": "4px",
-                "comment": "4px"
-            },
-            "social-button-blurRadius": {
-                "value": "10px",
-                "comment": "10px"
-            },
-            "social-button-spreadRadius": {
-                "value": "0",
-                "comment": "0"
             }
         }
     }

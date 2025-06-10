@@ -6,7 +6,6 @@ const meta: Meta = {
   tags: ['autodocs'],
   render: (args) => {
     return <div className={args.styles.join(' ')}>
-      {args.newsType &&<label className="bcbst-card__news-type">{args.newsType}</label>}
       {args.image.length > 0 &&
         <a className="bcbst-card__img" href={args?.ctaLink?.href} target="_blank">
           <picture>
@@ -30,10 +29,6 @@ const meta: Meta = {
           {args.ctaLink.label}
         </a>
       </div>
-      <div className="bcbst-card__footer">
-        <div className="bcbst-card__brand">{args.brand}</div>
-        <div className="bcbst-card__date">{args.date}</div>
-      </div>
     </div>
   }
 };
@@ -45,15 +40,6 @@ type Story = StoryObj;
 export const NewsCard: Story = {
   args: {
     ...data,
-    newsType: "",
-    styles: ['bcbst-card', 'bcbst-card--news'],
-  },
-} satisfies Story;
-
-export const NewsCardInSixUpNewsGrid: Story = {
-  args: {
-    ...data,
-    image: [],
     styles: ['bcbst-card', 'bcbst-card--news'],
   },
 } satisfies Story;

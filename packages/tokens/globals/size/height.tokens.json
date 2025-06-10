@@ -5,88 +5,6 @@
                 "value": "48px",
                 "comment": "48px"
             },
-            "tile": {
-                "service-component": {
-                    "heading-image": {
-                        "value": "90px",
-                        "comment": "90px"
-                    },
-                    "image": {
-                        "value": "60px",
-                        "comment": "60px"
-                    },
-                    "content": {
-                        "value": "150px",
-                        "comment": "150px"
-                    }
-                }
-            },
-            "navigation-tile": {
-                "desktop": {
-                    "value": "214px",
-                    "comment": "214px"
-                },
-                "mobile": {
-                    "value": "199px",
-                    "comment": "199px"
-                },
-                "heading": {
-                    "value": "70px",
-                    "comment": "70px"
-                }
-            },
-            "segmented-navigation": {
-                "mobile": {
-                    "value": "200px",
-                    "comment": "200px"
-                },
-                "tablet": {
-                    "value": "300px",
-                    "comment": "300px"
-                }
-            },
-            "video-carousel": {
-                "banner": {
-                    "value": "34px",
-                    "comment": "34px"
-                }
-            },
-            "image-feature-grid": {
-                "main-image-half": {
-                    "desktop": {
-                        "value": "438px",
-                        "comment": "438px"
-                    },
-                    "tablet": {
-                        "value": "348px",
-                        "comment": "348px"
-                    },
-                    "mobile": {
-                        "value": "264px",
-                        "comment": "264px"
-                    }
-                },
-                "main-image-skewed": {
-                    "desktop": {
-                        "value": "462px",
-                        "comment": "462px"
-                    },
-                    "tablet": {
-                        "value": "278px",
-                        "comment": "278px"
-                    },
-                    "mobile": {
-                        "value": "264px",
-                        "comment": "264px"
-                    }
-                },
-                "secondary-image": {
-                    "mobile": {
-                        "value": "130px",
-                        "comment": "130px"
-                    }
-                }
-            },
             "brands-grid": {
                 "img-height": {
                     "desktop": {
@@ -117,78 +35,10 @@
                     }
                 }
             },
-            "expert-modal": {
-                "min-height": {
-                    "value": "423px",
-                    "comment": "423px"
-                },
-                "img-height": {
-                    "value": "160px",
-                    "comment": "160px"
-                }
-            },
-            "location-finder": {
-                "tag": {
-                    "value": "20px",
-                    "comment": "20px"
-                },
-                "map": {
-                    "desktop": {
-                        "value": "818px",
-                        "comment": "818px"
-                    },
-                    "mobile": {
-                        "value": "328px",
-                        "comment": "328px"
-                    }
-                },
-                "results-left": {
-                    "tablet": {
-                        "value": "573px",
-                        "comment": "573px"
-                    },
-                    "mobile": {
-                        "value": "505px",
-                        "comment": "505px"
-                    }
-                },
-                "image-hotspots": {
-                    "modal-image": {
-                        "desktop": {
-                            "value": "214px",
-                            "comment": "214px"
-                        },
-                        "mobile": {
-                            "value": "140px",
-                            "comment": "140px"
-                        }
-                    }
-                }
-            },
-            "featured-visual-navigation": {
-                "desktop": {
-                    "value": "248px",
-                    "comment": "248px"
-                }
-            },
-            "mini-hero": {
-                "desktop": {
-                    "value": "296px",
-                    "comment": "296px"
-                }
-            },
             "secondary-hero": {
                 "desktop": {
                     "value": "520px",
                     "comment": "520px"
-                }
-            },
-            "hero-no-image": {
-                "mobile": {
-                    "heading-line-height": {
-                        "value": "36px",
-                        "comment": "36px"
-                    }
                 }
             }
         }

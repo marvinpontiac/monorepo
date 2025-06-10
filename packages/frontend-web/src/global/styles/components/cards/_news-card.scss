@@ -11,23 +11,6 @@
   .bcbst-card__img {
     display: block;
     height: auto;
-
-    .bcbst-card__topic {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      color: var(--color-font-button-primary-default);
-      background: var(--color-interactive-primary-default);
-      font: var(--font-body-p5);
-      font-weight: var(--font-weight-semibold);
-      padding: var(--size-grid-gap-small) var(--size-grid-padding-large);
-
-      html[lang="zh-cn"] & {
-        font: var(--font-cn-body-p5);
-        font-weight: var(--font-weight-semibold);
-      }
-    }
   }
 
   .bcbst-card__news-type {
@@ -48,19 +31,13 @@
     }
   }
 
-    .bcbst-card__heading {
-      text-decoration: none;
-      color: var(--color-gray-dark64);
-      font: var(--font-body-paragraph);
-      font-family: var(--font-family-heading);
-      font-weight: var(--font-weight-semibold);
-
-      html[lang="zh-cn"] & {
-        font: var(--font-cn-body-paragraph);
-        font-family: var(--font-cn-family-heading);
-        font-weight: var(--font-weight-semibold);
-      }
-    }
+  .bcbst-card__heading {
+    text-decoration: none;
+    color: var(--color-gray-dark64);
+    font: var(--font-body-paragraph);
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-semibold);
+  }
 
   .bcbst-card__description {
     text-overflow: ellipsis;
@@ -79,30 +56,8 @@
     margin-top: auto;
   }
 
-  .bcbst-card__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--size-grid-gap-medium) var(--size-spacing-small);
-    border-top: 1px solid var(--color-gray-light16);
-  }
-
-  .bcbst-card__brand {
-    color: var(--color-gray-dark48);
-    font: var(--font-body-eyebrow);
-    text-transform: uppercase;
-
-    html[lang="zh-cn"] & {
-      font: var(--font-cn-body-eyebrow);
-    }
-  }
-
   .bcbst-card__date {
     color: var(--color-gray-dark48);
     font: var(--font-body-p4);
-
-    html[lang="zh-cn"] & {
-      font: var(--font-cn-body-p4);
-    }
   }
 }

@@ -1,10 +1,6 @@
 {
   "size": {
     "icon": {
-      "extraSmall": {
-        "value": "14px",
-        "comment": "Extra Small (14px)"
-      },
       "superSmall": {
         "value": "16px",
         "comment": "Super Small (16px)"
@@ -32,38 +28,6 @@
       "xxl": {
         "value": "90px",
         "comment": "XXL (90px)"
-      },
-      "xxxl": {
-        "value": "128px",
-        "comment": "XXXL (128px)"
-      },
-      "services": {
-        "value": "64px",
-        "comment": "Services (64px)"
-      },
-      "socialShare": {
-        "value": "{size.icon.large}",
-        "comment": "Social Share (56px)"
-      },
-      "socialShareFooter": {
-        "value": "{size.icon.small}",
-        "comment": "Social Footer  (24px)"
-      },
-      "support": {
-        "value": "{size.icon.xxxl}",
-        "comment": "Support (128px)"
-      },
-      "utilityBelt": {
-        "value": "{size.icon.xxl}",
-        "comment": "Utility Belt (90px)"
-      },
-      "productBarcode": {
-        "value": "{size.icon.xl}",
-        "comment": "Product Barcod (74px)"
-      },
-      "productShareArrow": {
-        "value": "{size.icon.verySmall}",
-        "comment": "Product Share Arrow (18px)"
       }
     }
   }

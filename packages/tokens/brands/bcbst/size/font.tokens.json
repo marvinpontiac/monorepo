@@ -95,32 +95,12 @@
                 "8": {
                     "value": "64px",
                     "comment": "64px"
-                },
-                "navUtility": {
-                    "value": "{size.font.lineHeight.2}",
-                    "comment": "24px"
-                },
-                "footerMenu": {
-                    "value": "{size.font.lineHeight.2}",
-                    "comment": "24px"
-                },
-                "title": {
-                    "value": "{size.font.lineHeight.2}",
-                    "comment": "24px"
                 }
             },
             "letterSpacing": {
                 "small": {
                     "value": "1px",
                     "comment": "1px"
-                },
-                "button": {
-                    "value": "{size.font.letterSpacing.small.value}",
-                    "comment": "1px"
-                },
-                "tab": {
-                    "value": "0.96px",
-                    "comment": "0.96px"
                 }
             },
             "button": {
@@ -136,17 +116,9 @@
                     "value": "{size.font.small.2}",
                     "comment": "12px"
                 },
-                "navUtility": {
-                    "value": "{size.font.small.3}",
-                    "comment": "14px"
-                },
                 "footerMenu": {
                     "value": "{size.font.medium.1}",
                     "comment": "16px"
-                },
-                "footerUtility": {
-                    "value": "{size.font.small.2}",
-                    "comment": "12px"
                 },
                 "title": {
                     "value": "{size.font.small.3}",

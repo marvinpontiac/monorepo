@@ -20,10 +20,6 @@
     color: var(--color-font-form-label);
     font: var(--font-form-selection-label);
     text-transform: none;
-
-    html[lang="zh-cn"] & {
-      font: var(--font-cn-form-selection-label);
-    }
   }
 
   & + &__label::before {

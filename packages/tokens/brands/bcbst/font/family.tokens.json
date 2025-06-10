@@ -8,15 +8,5 @@
         "value": "'STIX two text', 'Times New Roman', serif"
       }
     }
-  },
-  "fontCn": {
-    "family": {
-      "body": {
-        "value": "'Aileron', Verdana, Geneva, sans-serif;"
-      },
-      "heading": {
-        "value": "'STIX two text',  'Times New Roman', serif"
-      }
-    }
   }
 }

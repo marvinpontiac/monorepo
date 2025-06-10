@@ -19,9 +19,6 @@
       "heading": {
         "value": "{font.weight.regular}"
       },
-      "headingBlurb": {
-        "value": "{font.weight.medium}"
-      },
       "body": {
         "value": "{font.weight.light}"
       }

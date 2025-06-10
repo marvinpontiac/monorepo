@@ -4,12 +4,6 @@
             "offWhite": {
                 "value": "#fffef5",
                 "comment": "#fffef5"
-            },
-            "image-hotspots": {
-                "hotspot": {
-                    "value": "#09818E",
-                    "comment": "#09818E"
-                }
             }
         }
     }

@@ -60,11 +60,6 @@
       margin: 0;
       font: var(--font-body-paragraph);
       font-weight: var(--font-weight-regular);
-
-      html[lang="zh-cn"] & {
-        font: var(--font-cn-body-paragraph);
-        font-weight: var(--font-weight-regular);
-      }
     }
 
     h3 {
@@ -103,19 +98,10 @@
       h3 {
         font: var(--font-heading-h5);
         font-size: var(--size-font-medium-1);
-
-        html[lang="zh-cn"] & {
-          font: var(--font-cn-heading-h5);
-          font-size: var(--size-font-medium-1);
-        }
       }
 
       p {
         font: var(--font-body-p5);
-
-        html[lang="zh-cn"] & {
-          font: var(--font-cn-body-p5);
-        }
       }
     }
   }

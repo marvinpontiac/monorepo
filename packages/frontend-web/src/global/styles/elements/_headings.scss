@@ -3,21 +3,10 @@
   font-size: var(--size-font-large-03);
   line-height: var(--font-line-height-7);
 }
-%display-cn {
-  font-family: var(--font-cn-family-serif);
-  font-size: var(--size-font-large-03);
-  line-height: var(--font-line-height-7);
-}
 %h1 {
   font: var(--font-mobile-heading-h1);
   @media (min-width: $size-breakpoint-sm) {
     font: var(--font-heading-h1);
-  }
-}
-%h1-cn {
-  font: var(--font-cn-mobile-heading-h1);
-  @media (min-width: $size-breakpoint-sm) {
-    font: var(--font-cn-heading-h1);
   }
 }
 %h2 {
@@ -26,22 +15,10 @@
     font: var(--font-heading-h2);
   }
 }
-%h2-cn {
-  font: var(--font-cn-mobile-heading-h2);
-  @media (min-width: $size-breakpoint-sm) {
-    font: var(--font-cn-heading-h2);
-  }
-}
 %h3 {
   font: var(--font-mobile-heading-h3);
   @media (min-width: $size-breakpoint-sm) {
     font: var(--font-heading-h3);
-  }
-}
-%h3-cn {
-  font: var(--font-cn-mobile-heading-h3);
-  @media (min-width: $size-breakpoint-sm) {
-    font: var(--font-cn-heading-h3);
   }
 }
 %h4 {
@@ -50,29 +27,14 @@
     font: var(--font-heading-h4);
   }
 }
-%h4-cn {
-  font: var(--font-cn-mobile-heading-h4);
-  @media (min-width: $size-breakpoint-sm) {
-    font: var(--font-cn-heading-h4);
-  }
-}
 %h5 {
   font: var(--font-mobile-heading-h5);
   @media (min-width: $size-breakpoint-sm) {
     font: var(--font-heading-h5);
   }
 }
-%h5-cn {
-  font: var(--font-cn-mobile-heading-h5);
-  @media (min-width: $size-breakpoint-sm) {
-    font: var(--font-cn-heading-h5);
-  }
-}
 %h6 {
   font: var(--font-heading-h6);
-}
-%h6-cn {
-  font: var(--font-cn-heading-h6);
 }
 .display {
   @extend %display;
@@ -100,33 +62,4 @@ h5,
 h6,
 .h6 {
   @extend %h6;
-}
-html[lang="zh-cn"] {
-  .display {
-    @extend %display-cn;
-  }
-  h1,
-  .h1 {
-    @extend %h1-cn;
-  }
-  h2,
-  .h2 {
-    @extend %h2-cn;
-  }
-  h3,
-  .h3 {
-    @extend %h3-cn;
-  }
-  h4,
-  .h4 {
-    @extend %h4-cn;
-  }
-  h5,
-  .h5 {
-    @extend %h5-cn;
-  }
-  h6,
-  .h6 {
-    @extend %h6-cn;
-  }
 }

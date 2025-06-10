@@ -16,10 +16,6 @@
             "margin-y": {
                 "value": "40px",
                 "comment": "40px"
-            },
-            "border-size": {
-                "value": "4px",
-                "comment": "4px"
             }
         },
         "list": {
@@ -30,12 +26,6 @@
             "margin-y": {
                 "value": "16px",
                 "comment": "16px"
-            },
-            "item": {
-                "margin-y": {
-                    "value": "8px",
-                    "comment": "8px"
-                }
             }
         }
     }

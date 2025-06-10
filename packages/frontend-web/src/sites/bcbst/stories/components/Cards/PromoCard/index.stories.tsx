@@ -46,7 +46,7 @@ type Story = StoryObj;
 export const PromoCard: Story = {
   args: {
     ...data,
-    hasVideo: true,
+    hasVideo: false,
     icon: 'bcbst-btn--video',
     styles: ['bcbst-card', 'bcbst-card--promo'],
   },

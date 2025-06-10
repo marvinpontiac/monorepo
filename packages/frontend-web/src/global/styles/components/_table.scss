@@ -55,10 +55,6 @@
         margin: 0;
         color: var(--color-font-button-text-secondary-hover);
         text-transform: uppercase;
-
-        html[lang="zh-cn"] & {
-            font: var(--font-cn-body-eyebrow);
-        }
     }
 
     &__heading {
@@ -219,11 +215,6 @@
         span {
             @extend %label;
             color: var(--color-gray-dark64);
-
-            html[lang="zh-cn"] & {
-                @extend %label-cn;
-            }
-            
         }
     }
 

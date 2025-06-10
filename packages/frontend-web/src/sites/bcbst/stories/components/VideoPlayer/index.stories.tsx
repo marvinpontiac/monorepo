@@ -20,13 +20,15 @@ const meta: Meta = {
           </div>
         </div>
         <div className="bcbst-videoplayer__player">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EaV0cC3Ect0?si=a05jciYzSe5muSs5"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/EOFDFRrKTdw?si=vNp4HwqDLNNFnPfS" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen>
+          </iframe>
         </div>
       </div>
     );

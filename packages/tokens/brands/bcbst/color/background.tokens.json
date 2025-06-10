@@ -37,9 +37,6 @@
             },
             "input": {
                 "value": "{color.gray.light32.value}"
-            },
-            "promo-alt": {
-                "value": "{color.brand.navy}"
             }
         }
     }

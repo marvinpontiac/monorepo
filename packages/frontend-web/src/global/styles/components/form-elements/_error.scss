@@ -11,9 +11,5 @@
     margin-top: 0;
     color: var(--color-font-error);
     font: var(--font-form-error);
-
-    html[lang="zh-cn"] & {
-      font: var(--font-cn-form-error);
-    }
   }
 }

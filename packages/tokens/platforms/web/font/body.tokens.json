@@ -27,15 +27,6 @@
             },
             "label": {
                 "value": "{font.weight.semibold} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
-            },
-            "eyebrow": {
-                "value": "{font.weight.semibold} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
-            },
-            "rteBlockQuote": {
-                "value": "{font.weight.light} {size.font.medium.3}/{size.font.lineHeight.3} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
-            },
-            "tab": {
-                "value": "{font.weight.bold} {size.font.small.2}/{size.font.lineHeight.1} var(--local-font-family-body, var(--local-font-family, {font.family.body}))"
             }
         }
     }

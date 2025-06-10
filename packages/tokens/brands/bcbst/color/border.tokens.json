@@ -6,7 +6,7 @@
                     "value": "{color.interactive.secondary.default.value}"
                 },
                 "light": {
-                    "value": "{color.brand.coolLilac.value}"
+                    "value": "{color.gray.light16.value}"
                 }
             },
             "button": {

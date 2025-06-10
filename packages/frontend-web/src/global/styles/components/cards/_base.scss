@@ -14,27 +14,6 @@
       object-fit: cover;
     }
   }
-  &__video-thumbnail {
-    position: absolute;
-    z-index: 2;
-    background-position: center;
-    background-size: cover;
-    inset: 0;
-    svg {
-      position: relative;
-      top: calc(50% - var(--size-videoplayer-playbutton) / 2);
-      left: 50%;
-      width: var(--size-videoplayer-playbutton);
-      height: var(--size-videoplayer-playbutton);
-      color: var(--color-font-reversed);
-      transform: translateX(-50%);
-      transform-origin: 0 50%;
-      transition: scale 0.25s;
-      &:hover {
-        scale: 1.2;
-      }
-    }
-  }
   &__body {
     display: flex;
     flex-direction: column;
@@ -49,10 +28,6 @@
     align-items: center;
     padding: calc(var(--size-spacing-base) * 1.25) calc(var(--size-spacing-base) * 2.5) 0
       calc(var(--size-spacing-base) * 2.5);
-
-      html[lang="zh-cn"] & {
-        @extend %paragraph-cn;
-      }
 
     :first-child {
       margin-top: 0;

@@ -24,11 +24,6 @@
     margin-left: var(--size-blockquote-margin-x);
     font-style: italic;
     
-    html[lang="zh-cn"] & {
-      @extend %p2-cn;
-      font-style: italic;
-    }
-
     @include respond-below(tablet) {
       margin-left: calc(var(--size-spacing-base) * 2.5);
       margin-right: calc(var(--size-spacing-base) * 2.5);
@@ -47,10 +42,6 @@
 
     p {
       font: var(--font-body-rte-block-quote);
-
-      html[lang="zh-cn"] & {
-        font: var(--font-cn-body-rte-block-quote);
-      }
     }
   }
 
@@ -72,10 +63,6 @@
 
   li {
     @extend %paragraph;
-
-    html[lang="zh-cn"] & {
-      @extend %paragraph-cn;
-    }
   }
 
   img {
@@ -117,60 +104,32 @@
 
   .rte-title--h1 {
     @extend %h1;
-
-    html[lang="zh-cn"] & {
-      @extend %h1-cn;
-    }
   }
 
   .rte-title--h2 {
     @extend %h2;
-
-    html[lang="zh-cn"] & {
-      @extend %h2-cn;
-    }
   }
 
   .rte-title--h3 {
     @extend %h3;
-
-    html[lang="zh-cn"] & {
-      @extend %h3-cn;
-    }
   }
 
   .rte-title--h4 {
     @extend %h4;
-
-    html[lang="zh-cn"] & {
-      @extend %h4-cn;
-    }
   }
 
   .rte-title--h5 {
     @extend %h5;
-
-    html[lang="zh-cn"] & {
-      @extend %h5-cn;
-    }
   }
 
   .rte-title--h6 {
     @extend %h6;
-
-    html[lang="zh-cn"] & {
-      @extend %h6-cn;
-    }
   }
 
   .p1,
   .p2 {
     @include respond-below(tablet) {
       font: var(--font-body-p3);
-
-      html[lang="zh-cn"] & {
-        font: var(--font-body-p3);
-      }
     }
   }
 }
