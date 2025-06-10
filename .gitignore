@@ -1,7 +1,0 @@
-node_modules
-dist
-build
-tokens.es6.js
-tokens.json
-_tokens.scss
-_root.scss
