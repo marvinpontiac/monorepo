@@ -73,7 +73,7 @@ You can link to a specific package manually by running the
 below command in root dir where your package JSON is located.
 
 ```bash
-npm link @acs-test/tokens
+npm link @acs-test11/tokens
 ```
 
 ## Learn more
