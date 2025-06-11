@@ -1,6 +1,6 @@
 {
   "name": "@acs-test11/tokens",
-  "version": "1.0.01",
+  "version": "1.0.2",
   "license": "ISC",
   "description": "ACS Design Tokens",
   "type": "module",
