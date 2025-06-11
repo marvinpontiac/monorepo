@@ -1,8 +1,8 @@
 import { addons } from 'storybook/manager-api';
-import bcbstStorybookTheme from './themes/bcbst';
+import acsTestStorybookTheme from './themes/acs-test';
 
 const themeMap = {
-  bcbst: bcbstStorybookTheme,
+  acsTest: acsTestStorybookTheme,
 };
 
 function setTheme(env) {

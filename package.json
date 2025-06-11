@@ -1,9 +1,9 @@
 {
-  "name": "bcbst",
-  "version": "1.0.0",
+  "name": "acs-test",
+  "version": "1.0.01",
   "main": "index.js",
   "license": "ISC",
-  "private": true,
+  "private": false,
   "workspaces": [
     "./packages/tokens",
     "./packages/assets",

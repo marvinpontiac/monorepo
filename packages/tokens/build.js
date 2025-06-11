@@ -2,7 +2,7 @@ import StyleDictionaryPackage from 'style-dictionary';
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
 const PLATFORMS = ['web', 'frontend'];
-const BRANDS = ['bcbst'];
+const BRANDS = ['acs-test'];
 
 function getStyleDictionaryConfig(brand, platform) {
   return {

@@ -5,11 +5,11 @@
 //      &--modifier
 // Unless working with third party classes, classes should be all lower kebab-case
 
-.bcbst-container {
+.acs-test-container {
   container: container / inline-size;
 }
 
-.bcbst-grid {
+.acs-test-grid {
   display: grid;
   max-width: var(--size-content-contained-width);
   padding-right: var(--size-grid-padding-small);

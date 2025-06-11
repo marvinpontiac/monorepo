@@ -1,9 +1,9 @@
 import type { StorybookConfig } from '@storybook/nextjs-vite';
 import path, { dirname, join } from 'path';
 
-const STORIES = `../src/sites/bcbst/**/*.stories.@(js|jsx|mjs|ts|tsx)`;
-const DOCS = `../src/sites/bcbst/**/*.mdx`;
-const STATIC_DIRS = `../src/sites/bcbst/public`;
+const STORIES = `../src/sites/acs-test/**/*.stories.@(js|jsx|mjs|ts|tsx)`;
+const DOCS = `../src/sites/acs-test/**/*.mdx`;
+const STATIC_DIRS = `../src/sites/acs-test/public`;
 
 const config: StorybookConfig = {
   stories: [DOCS, STORIES],
@@ -37,7 +37,7 @@ const config: StorybookConfig = {
           `../src/sites/${process.env.STORYBOOK_SITE}/styles/index.scss`
         ),
         '@global-components': path.resolve(__dirname, '../src/global/components'),
-        '@docs-components': path.resolve(__dirname, '../src/sites/bcbst/docs'),
+        '@docs-components': path.resolve(__dirname, '../src/sites/acs-test/docs'),
       };
 
       if (!config.resolve.extensions) {

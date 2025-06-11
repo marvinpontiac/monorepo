@@ -1,20 +1,20 @@
 {
-  "name": "@bcbst/frontend-web",
+  "name": "@acs-test/frontend-web",
   "private": false,
-  "version": "0.0.1-beta.0",
+  "version": "1.0.01",
   "type": "module",
   "files": [
     "build/**/*.css",
     "src"
   ],
   "scripts": {
-    "storybook:bcbst": "cross-env STORYBOOK_SITE=bcbst storybook dev -p 6010",
-    "build:bcbst": "tsc && vite build",
-    "build": "npm run build:bcbst",
+    "storybook:acs-test": "cross-env STORYBOOK_SITE=acs-test storybook dev -p 6010",
+    "build:acs-test": "tsc && vite build",
+    "build": "npm run build:acs-test",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storybookBuild:bcbst": "cross-env STORYBOOK_SITE=bcbst MODE=development storybook build -c .storybook -o ./Assets/Storybook",
+    "storybookBuild:acs-test": "cross-env STORYBOOK_SITE=acs-test MODE=development storybook build -c .storybook -o ./Assets/Storybook",
     "plop": "plop",
     "stylelint": "stylelint ./src/**/*.scss --fix",
     "preview-ddl": "npm link"

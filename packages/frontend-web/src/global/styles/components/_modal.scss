@@ -1,4 +1,4 @@
-.bcbst-modal {
+.acs-test-modal {
   max-width: 50%;
   padding: calc(var(--size-spacing-base) * 2);
   background-color: var(--color-gray-light40);
@@ -45,7 +45,7 @@
       transition: opacity 0.3s;
       visibility:visible;
 
-      .bcbst-modal {
+      .acs-test-modal {
         transform: translateY(0);
         transition: transform 0.3s ease-out;
       }

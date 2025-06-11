@@ -5,15 +5,15 @@
 //      &--modifier
 // Unless working with third party classes, classes should be all lower kebab-case
 
-.bcbst-card--news {
+.acs-test-card--news {
   @include box-shadow;
 
-  .bcbst-card__img {
+  .acs-test-card__img {
     display: block;
     height: auto;
   }
 
-  .bcbst-card__news-type {
+  .acs-test-card__news-type {
     color: var(--color-gray-dark16);
     font-weight: var(--font-weight-bold);
     padding: calc(var(--size-spacing-base) * 2.5) calc(var(--size-spacing-base) * 2.5)
@@ -31,7 +31,7 @@
     }
   }
 
-  .bcbst-card__heading {
+  .acs-test-card__heading {
     text-decoration: none;
     color: var(--color-gray-dark64);
     font: var(--font-body-paragraph);
@@ -39,7 +39,7 @@
     font-weight: var(--font-weight-semibold);
   }
 
-  .bcbst-card__description {
+  .acs-test-card__description {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -48,7 +48,7 @@
     color: var(--color-gray-dark64);
   }
 
-  .bcbst-card__cta {
+  .acs-test-card__cta {
     justify-content: flex-end;
     margin-bottom: var(--size-spacing-medium);
     margin-right: var(--size-spacing-small);
@@ -56,7 +56,7 @@
     margin-top: auto;
   }
 
-  .bcbst-card__date {
+  .acs-test-card__date {
     color: var(--color-gray-dark48);
     font: var(--font-body-p4);
   }

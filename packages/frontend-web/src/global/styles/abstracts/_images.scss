@@ -1,5 +1,5 @@
-%bcbst-image-crop-base {
-    .bcbst-image {
+%acs-test-image-crop-base {
+    .acs-test-image {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,12 +20,12 @@
     }
 }
 
-.bcbst-image-crop {
+.acs-test-image-crop {
     // This default class sets image cover and crops at any width or height centered horizontally and vertically.
-    @extend %bcbst-image-crop-base;
+    @extend %acs-test-image-crop-base;
     &--contain {
-        @extend %bcbst-image-crop-base;
-        .bcbst-image {
+        @extend %acs-test-image-crop-base;
+        .acs-test-image {
             img {
                 object-fit: contain;
             }
@@ -34,10 +34,10 @@
     
     &--square {
         // Will scale to width of this element or it's container at aspect ratios set below. Can also set any height and width: auto to scale down centered. 
-        @extend %bcbst-image-crop-base;
+        @extend %acs-test-image-crop-base;
         aspect-ratio: 4/4;
         margin: 0 auto;
-        .bcbst-image {
+        .acs-test-image {
             picture {
                 aspect-ratio: 4/4;
             }
@@ -46,8 +46,8 @@
 
     &--circle {
        // Will scale to width of this element or it's container at aspect ratios set below. Can also set any height and width: auto to scale down centered. 
-        @extend %bcbst-image-crop-base;
-        .bcbst-image {
+        @extend %acs-test-image-crop-base;
+        .acs-test-image {
             aspect-ratio: 4/4;
             margin: 0 auto;
             picture {
@@ -59,8 +59,8 @@
 
     &--3-2 {
        // Will scale to width of this element or it's container at aspect ratios set below. Can also set any height and width: auto to scale down centered. 
-        @extend %bcbst-image-crop-base;
-        .bcbst-image {
+        @extend %acs-test-image-crop-base;
+        .acs-test-image {
             aspect-ratio: 3/2;
             margin: 0 auto;
             picture {
@@ -71,8 +71,8 @@
     
     &--2-3 {
        // Will scale to width of this element or it's container at aspect ratios set below. Can also set any height and width: auto to scale down centered. 
-        @extend %bcbst-image-crop-base;
-        .bcbst-image {
+        @extend %acs-test-image-crop-base;
+        .acs-test-image {
             aspect-ratio: 2/3;
             margin: 0 auto;
             picture {
@@ -84,8 +84,8 @@
 
     &--4-3 {
        // Will scale to width of this element or it's container at aspect ratios set below. Can also set any height and width: auto to scale down centered. 
-        @extend %bcbst-image-crop-base;
-        .bcbst-image {
+        @extend %acs-test-image-crop-base;
+        .acs-test-image {
             aspect-ratio: 4/3;
             margin: 0 auto;
             picture {
@@ -96,8 +96,8 @@
 
     &--3-4 {
        // Will scale to width of this element or it's container at aspect ratios set below. Can also set any height and width: auto to scale down centered. 
-        @extend %bcbst-image-crop-base;
-        .bcbst-image {
+        @extend %acs-test-image-crop-base;
+        .acs-test-image {
             aspect-ratio: 3/4;
             margin: 0 auto;
             picture {
@@ -108,8 +108,8 @@
 
     &--16-9 {
        // Will scale to width of this element or it's container at aspect ratios set below. Can also set any height and width: auto to scale down centered. 
-        @extend %bcbst-image-crop-base;
-        .bcbst-image {
+        @extend %acs-test-image-crop-base;
+        .acs-test-image {
             aspect-ratio: 16/9;
             margin: 0 auto;
             picture {

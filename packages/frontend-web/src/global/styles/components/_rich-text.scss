@@ -1,4 +1,4 @@
-.bcbst-rich-text {
+.acs-test-rich-text {
   > :first-child {
     padding-top: 0;
     margin-top: 0;
@@ -52,7 +52,7 @@
     line-height: 0;
   }
 
-  a:not(.bcbst-btn) {
+  a:not(.acs-test-btn) {
     font-size: inherit;
     font: inherit;
   }
@@ -91,7 +91,7 @@
       }
     }
 
-    .bcbst-btn:not(:last-child) {
+    .acs-test-btn:not(:last-child) {
       @include respond-above(tablet) {
         margin-right: var(--size-spacing-small);
       }

@@ -92,7 +92,7 @@ const preview: Preview = {
       <>
         {context.globals.grid === 'Full Width 12 Col' && (
           <div
-            className="bcbst-container"
+            className="acs-test-container"
             style={{
               pointerEvents: 'none',
               position: 'fixed',
@@ -103,19 +103,19 @@ const preview: Preview = {
               zIndex: '999',
             }}
           >
-            <div className="bcbst-grid" style={{ background: 'blue', height: '100%' }}>
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
-              <div className="bcbst-grid__col-1" style={{ background: 'red', height: '100%' }} />
+            <div className="acs-test-grid" style={{ background: 'blue', height: '100%' }}>
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
+              <div className="acs-test-grid__col-1" style={{ background: 'red', height: '100%' }} />
             </div>
           </div>
         )}

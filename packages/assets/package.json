@@ -1,9 +1,9 @@
 {
-  "name": "@bcbst/assets",
-  "version": "0.0.1-beta.0",
+  "name": "@acs-test/assets",
+  "version": "1.0.01",
   "license": "ISC",
   "private": false,
-  "description": "BCBST icons and fonts",
+  "description": "ACS icons and fonts",
   "devDependencies": {
     "npm": "^10.4.0",
     "replace-in-files-cli": "^2.2.0",
@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "svg:optimize": "svgo --folder ./icons/svg/originals -o ./icons/svg/optimized",
-    "svg:join": "svg-join -s ./icons/svg/optimized/*.svg -o ./icons/svg/compiled -n bcbst-icons -p bcbst-",
+    "svg:join": "svg-join -s ./icons/svg/optimized/*.svg -o ./icons/svg/compiled -n acs-test-icons -p acs-test-",
     "svg:toCurrentColor": "replace-in-files --string='#323232' --replacement='currentColor' ./icons/svg/optimized/*.svg",
     "svg:dirToJson": "node ./build.js",
     "build": "npm run svg:optimize && npm run svg:toCurrentColor && npm run svg:join && npm run svg:dirToJson",

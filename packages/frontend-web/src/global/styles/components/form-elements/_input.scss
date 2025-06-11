@@ -5,11 +5,11 @@
 //      &--modifier
 // Unless working with third party classes, classes should be all lower kebab-case
 
-.bcbst-form-input {
+.acs-test-form-input {
     @extend %form-input;
 }
 
-.bcbst-form-field {
+.acs-test-form-field {
     .react-international-phone-input-container {
         .react-international-phone-country-selector-button {
             margin-right: 0px;

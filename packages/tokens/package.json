@@ -1,8 +1,8 @@
 {
-  "name": "@bcbst/tokens",
-  "version": "0.0.1-beta.0",
+  "name": "@acs-test/tokens",
+  "version": "1.0.01",
   "license": "ISC",
-  "description": "BCBST Design Tokens",
+  "description": "ACS Design Tokens",
   "type": "module",
   "devDependencies": {
     "style-dictionary": "^3.9.2"

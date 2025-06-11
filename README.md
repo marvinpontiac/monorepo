@@ -33,14 +33,14 @@ npm run build --workspaces --if-present
 Start the storybook site of the specific brand
 
 ```bash
-npm run storybook:bcbst --workspaces=frontend-web --if-present
+npm run storybook:acs-test --workspaces=frontend-web --if-present
 ```
 
 or navigate to the
 
 ```bash
 cd frontend-web
-npm run storybook:bcbst
+npm run storybook:acs-test
 ```
 
 _See local READMEs in each package for additional information_
@@ -52,10 +52,10 @@ _See local READMEs in each package for additional information_
 This command will run `npm link` within each package
 
 ```bash
-npm run preview-bcbst --workspaces
+npm run preview-acs-test --workspaces
 ```
 
-#### In BCBST repo
+#### In ACS repo
 
 This will replace the installed node_modules package  
 with a local reference to your current branch 
@@ -64,7 +64,7 @@ To unlink the preview package rerun `npm i`
 
 ```bash
 cd frontend
-npm run preview-bcbst
+npm run preview-acs-test
 ```
 
 #### In any repository 
@@ -73,7 +73,7 @@ You can link to a specific package manually by running the
 below command in root dir where your package JSON is located.
 
 ```bash
-npm link @bcbst/tokens
+npm link @acs-test/tokens
 ```
 
 ## Learn more

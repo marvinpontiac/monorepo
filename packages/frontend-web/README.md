@@ -61,7 +61,7 @@ To create a new component, follow these steps:
 ### package.json > scripts
 **ADD** `"build:<site>": "tsc && vite build"`  
 **ADD** `"dev:<site>": "cross-env STORYBOOK_SITE=<site> storybook dev -p <6001>"` -- change port number so there are no conflicts    
-**MODIFY** `"build": "npm run build:bcbst && build:<site>"`  
+**MODIFY** `"build": "npm run build:acs-test && build:<site>"`  
 
 ### .storybook > themes > <site>
 If the new theme has been built in the tokens build already, there should be a theme folder and a `tokens.es6.js` file available 

@@ -11,7 +11,7 @@ export default function (plop) {
     actions: [
       {
         type: 'add',
-        path: './src/sites/bcbst/stories/components/{{pascalCase name}}/index.stories.tsx',
+        path: './src/sites/acs-test/stories/components/{{pascalCase name}}/index.stories.tsx',
         templateFile: './plop-templates/Component.stories.tsx.hbs',
       },
       {
@@ -39,12 +39,12 @@ export default function (plop) {
     actions: [
       {
         type: 'add',
-        path: './src/sites/bcbst/stories/information/{{pascalCase name}}/index.mdx',
+        path: './src/sites/acs-test/stories/information/{{pascalCase name}}/index.mdx',
         templateFile: './plop-templates/Documentation.mdx.hbs',
       },
       {
         type: 'add',
-        path: './src/sites/bcbst/stories/information/{{pascalCase name}}/TokenExample.tsx',
+        path: './src/sites/acs-test/stories/information/{{pascalCase name}}/TokenExample.tsx',
         templateFile: './plop-templates/TokenExample.tsx.hbs',
       },
     ],
