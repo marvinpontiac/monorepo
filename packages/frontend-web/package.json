@@ -1,7 +1,7 @@
 {
   "name": "@acs-test11/frontend-web",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.7",
   "type": "module",
   "files": [
     "build/**/*.css",
@@ -17,7 +17,7 @@
     "storybookBuild:acs-test": "cross-env STORYBOOK_SITE=acs-test MODE=development storybook build -c .storybook -o ./Assets/Storybook",
     "plop": "plop",
     "stylelint": "stylelint ./src/**/*.scss --fix",
-    "preview-ddl": "npm link"
+    "preview-acs-test": "npm link"
   },
   "dependencies": {
     "react": "^18.2.0",

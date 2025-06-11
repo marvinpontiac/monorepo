@@ -1,6 +1,6 @@
 {
   "name": "@acs-test11/tokens",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "license": "ISC",
   "description": "ACS Design Tokens",
   "type": "module",
@@ -16,6 +16,6 @@
   ],
   "scripts": {
     "build": "node ./build.js",
-    "preview-ddl": "npm link"
+    "preview-acs-test": "npm link"
   }
 }

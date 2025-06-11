@@ -1,6 +1,6 @@
 {
   "name": "@acs-test11/assets",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "license": "ISC",
   "private": false,
   "description": "ACS icons and fonts",
@@ -26,6 +26,6 @@
     "svg:toCurrentColor": "replace-in-files --string='#323232' --replacement='currentColor' ./icons/svg/optimized/*.svg",
     "svg:dirToJson": "node ./build.js",
     "build": "npm run svg:optimize && npm run svg:toCurrentColor && npm run svg:join && npm run svg:dirToJson",
-    "preview-ddl": "npm link"
+    "preview-acs-test": "npm link"
   }
 }

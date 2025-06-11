@@ -1,12 +1,12 @@
 {
   "name": "acs-test11",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "main": "index.js",
   "license": "ISC",
-  "private": false,
-  "workspaces": [
-    "./packages/tokens",
-    "./packages/assets",
-    "./packages/frontend-web"
-  ]
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "./packages/*"
+    ]
+  }
 }
